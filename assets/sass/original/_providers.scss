@@ -3,117 +3,147 @@ div.bp-wrap-lwp {
 }
 
 ul.bp-list-with-popups {
-  list-style: none;
   overflow: visible;
-  border: 0;
-  padding: 0;
+
   margin: 0;
+  padding: 0;
+
+  list-style: none;
+
+  border: 0;
   > li {
     float: left;
-    background: none;
-    border: 0;
-    padding: 0;
-    margin: 0 10px 10px 0;
     overflow: visible;
+
+    margin: 0 10px 10px 0;
+    padding: 0;
+
+    border: 0;
+    background: none;
   }
 }
 
 div {
-  &.bp-item-element, &.bp-item-element2 {
+  &.bp-item-element,
+  &.bp-item-element2 {
+    font-family: Ubuntu,sans-serif;
+    font-size: 18px;
+
     width: 190px;
     padding: 15px;
-    background: white;
+
+    cursor: pointer;
+    text-align: center;
+
     border: 1px solid #c0c0c0;
     border-radius: 8px;
-    text-align: center;
-    cursor: pointer;
-    font-size: 18px;
-    font-family: Ubuntu,sans-serif;
+    background: white;
   }
-  &.bp-item-element > p, &.bp-item-element2 > p {
-    color: red;
+  &.bp-item-element > p,
+  &.bp-item-element2 > p {
     font-size: 22px;
+    line-height: 1em;
+
     margin: 10px 0 0 0;
     padding: 10px 0 0 0;
-    line-height: 1em;
+
+    color: red;
     border-top: 1px dashed #d0d0d0;
   }
   &.bp-item-element:hover {
-    box-shadow: inset 0 0 20px rgba(0, 0, 0, 0.2);
+    box-shadow: inset 0 0 20px rgba(0, 0, 0, .2);
   }
   &.bp-popup-element {
-    background: #d0ec6f;
-    display: none;
-    width: 260px;
-    border-radius: 8px;
-    padding: 30px;
-    text-align: center;
-    cursor: auto;
     font-family: Ubuntu,sans-serif;
     font-size: 18px;
     line-height: 1.2em;
+
+    display: none;
+
+    width: 260px;
+    padding: 30px;
+
+    cursor: auto;
+    text-align: center;
+
+    border-radius: 8px;
+    background: #d0ec6f;
     > {
       p {
         margin: 0;
+
         text-align: left;
         + p {
           margin-top: 10px;
           padding-top: 10px;
+
           border-top: 1px dashed white;
         }
         > {
           b {
             font-weight: bold;
+
             color: #7ea724;
           }
           span {
             font-weight: bold;
-            color: #333333;
+
+            color: #333;
           }
         }
       }
       span > a {
         font-size: 15px;
+
         color: #7ea724;
       }
     }
   }
   &.bp-item-element2 {
-    background: white;
     border: 1px solid white;
+    background: white;
   }
 }
 
 #bp-shaded-background {
-  display: none;
   position: fixed;
-  width: 100%;
-  height: 100%;
+  z-index: 999;
   top: 0;
   left: 0;
+
+  display: none;
+
+  width: 100%;
+  height: 100%;
+
   background: black;
-  z-index: 999;
 }
 
 .bp_compare_head {
   font-size: 17px;
   font-weight: bold;
   line-height: 35px;
+
   padding: 5px 10px 5px 10px;
   form {
     float: right;
+
     margin-left: 5px;
   }
 }
 
 .bp_compare_table {
   width: 100%;
+
   table-layout: fixed;
   td {
-    padding: 6px 2px 6px 10px;
     font-size: 12px;
+
+    padding: 6px 2px 6px 10px;
+
     text-align: center;
     vertical-align: middle;
+
     border: 1px solid #e8e8e8;
     &.faceoff {
       font-size: 15px;
@@ -126,6 +156,7 @@ div {
     }
     &.prop {
       width: 160px;
+
       background-color: #f4f4f4;
     }
   }
@@ -135,18 +166,23 @@ div {
   td {
     &.fld-price {
       font-size: 18px !important;
+
       color: #709f13;
     }
     &.section_head {
-      border: none;
       padding: 5px 0 5px 0;
+
+      border: none;
       > div {
-        height: 46px;
-        line-height: 46px;
-        color: black;
-        text-transform: uppercase;
-        font-weight: bold;
         font-size: 15px;
+        font-weight: bold;
+        line-height: 46px;
+
+        height: 46px;
+
+        text-transform: uppercase;
+
+        color: black;
         border-radius: 6px;
       }
     }
@@ -154,18 +190,23 @@ div {
 }
 
 .bp-profile-button {
-  display: block;
-  background: url('profile-button-bg.png') repeat-x 0 0;
   font-size: 18px;
   font-weight: bold;
-  color: white !important;
+
+  display: block;
+
   padding: 10px 20px 10px 20px;
-  text-decoration: none;
+
   text-align: center;
+  text-decoration: none;
+
+  color: white !important;
   border-radius: 6px;
+  background: url('../img/profile-button-bg.png') repeat-x 0 0;
   &:hover {
-    color: white;
     text-decoration: none;
+
+    color: white;
     background-position: 0 -60px;
   }
 }
@@ -174,61 +215,73 @@ div {
   &.rating-stars {
     width: 98px;
     height: 17px;
-    background: url('images/rating-stars.png') 0 0 no-repeat;
     margin: 0 auto;
+
+    background: url('../img/rating-stars.png') 0 0 no-repeat;
     > div {
       height: 100%;
-      background: url('images/rating-stars.png') 0 -17px no-repeat;
+
+      background: url('../img/rating-stars.png') 0 -17px no-repeat;
     }
   }
   &.icon-tick {
     width: 28px;
     height: 28px;
-    background: url('images/tick.png') 2px 0 no-repeat;
     margin: 0 auto;
+
+    background: url('../img/tick-2.png') 2px 0 no-repeat;
   }
   &.icon-cross {
     width: 28px;
     height: 28px;
-    background: url('images/tick.png') 2px 0 no-repeat;
     margin: 0 auto;
-    background: url('images/cross.png') 0 0;
+
+    background: url('../img/tick-2.png') 2px 0 no-repeat;
+    background: url('../img/cross.png') 0 0;
   }
 }
 
 a {
-  &.guide-link, &.guide-area-link {
-    display: block;
-    width: 135px;
-    float: left;
-    text-align: center;
+  &.guide-link,
+  &.guide-area-link {
     font-size: 17px;
     font-weight: bold;
     line-height: 1em;
+
+    display: block;
+    float: left;
+
+    width: 135px;
     padding: 0 5px 0 5px;
+
+    text-align: center;
     text-decoration: none;
   }
   &.guide-link > div.guide-icon {
     width: 100%;
     height: 110px;
-    background: url('images/guide-icons2.jpg');
     margin: 0 auto 0 auto;
+
     cursor: pointer;
     text-decoration: none;
+
+    background: url('../img/guide-icons2.jpg');
   }
   &.guide-area-link {
+    width: 279px;
+
+    text-decoration: none;
     > div.guide-icon {
       width: 100%;
-      height: 110px;
-      background: url('images/guide-icons2.jpg');
+
+      height: 245px;
       margin: 0 auto 0 auto;
+
       cursor: pointer;
       text-decoration: none;
-      height: 245px;
-      text-decoration: none;
+
+      background: url('../img/guide-icons2.jpg');
     }
-    width: 279px;
-    text-decoration: none;
   }
 }
 

@@ -85,7 +85,7 @@
   width: 80px;
   height: 16px;
 
-  background: transparent url('https://www.bestvpn.com/wp-content/plugins/author-hreview/style/../images/stars.png') 0 -16px repeat-x;
+  background: transparent url('../img/stars.png') 0 -16px repeat-x;
   .result {
     position: absolute;
     z-index: 102;
@@ -96,7 +96,7 @@
 
     text-indent: -9999px;
 
-    background: transparent url('https://www.bestvpn.com/wp-content/plugins/author-hreview/style/../images/stars.png') 0 0 repeat-x;
+    background: transparent url('../img/stars.png') 0 0 repeat-x;
   }
 }
 
@@ -153,7 +153,7 @@
     height: 32px;
     padding-left: 40px;
 
-    background: transparent url('https://www.bestvpn.com/wp-content/plugins/author-hreview/style/../images/price.png') no-repeat 0 50%;
+    background: transparent url('../img/price.png') no-repeat 0 50%;
     span {
       position: relative;
 
@@ -215,7 +215,7 @@
   width: 80px !important;
   height: 16px !important;
 
-  background: transparent url('https://www.bestvpn.com/wp-content/plugins/author-hreview/style/../images/stars.png') 0 -16px repeat-x;
+  background: transparent url('../img/stars.png') 0 -16px repeat-x;
   .ar_result_home {
     position: absolute;
     z-index: 102;
@@ -226,7 +226,7 @@
 
     text-indent: -9999px;
 
-    background: transparent url('https://www.bestvpn.com/wp-content/plugins/author-hreview/style/../images/stars.png') 0 0 repeat-x;
+    background: transparent url('../img/stars.png') 0 0 repeat-x;
   }
 }
 
@@ -308,7 +308,7 @@
   color: #fff !important;
   border: none;
   border-radius: 3px;
-  background: #777 url('https://www.bestvpn.com/wp-content/plugins/author-hreview/style/../images/bg_button.png') repeat-x bottom;
+  background: #777 url('../img/bg_button.png') repeat-x bottom;
   text-shadow: 1px 1px #666;
   &:hover {
     background-position: 0 center;
@@ -508,7 +508,7 @@ audio:not([controls]) {
 }
 
 html {
-  font-family: sans-serif;
+  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
   font-size: 100%;
 }
 
@@ -516,7 +516,7 @@ button,
 input,
 select,
 textarea {
-  font-family: sans-serif;
+  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
 }
 
 body {
@@ -575,7 +575,7 @@ abbr[title] {
 
 b,
 strong {
-  font-family: Arial;
+  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
   font-weight: bold !important;
 }
 
@@ -606,10 +606,8 @@ code,
 kbd,
 pre,
 samp {
-  font-family: monospace,serif;
+  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
   font-size: 1em;
-
-  _font-family: 'courier new',monospace;
 }
 
 pre {
@@ -795,6 +793,7 @@ table {
 }
 
 .container {
+  margin: 0 auto;
   .vpn_bar {
     .menu {
       h2 {
@@ -973,8 +972,8 @@ table {
     }
   }
   .footer {
-    position: absolute;
-    z-index: 20;
+/*     position: absolute;
+z-index: 20; */
     .copytext {
       width: 180px;
     }
@@ -1266,24 +1265,24 @@ table.summary_table {
           background-position: 6px center;
         }
         &:nth-child(2) {
-          background-image: url('https://www.bestvpn.com/wp-content/themes/bestvpn/css/../../../../wp-content/themes/bestvpn/img/toprow/image2.png');
+          background-image: url('../img/image2.png');
           background-repeat: no-repeat;
           background-position: 10px center;
         }
         &:nth-child(3) {
           padding-left: 15px;
 
-          background-image: url('https://www.bestvpn.com/wp-content/themes/bestvpn/css/../../../../wp-content/themes/bestvpn/img/toprow/image3.png');
+          background-image: url('../img/image3.png');
           background-repeat: no-repeat;
           background-position: 5px center;
         }
         &:nth-child(4) {
-          background-image: url('https://www.bestvpn.com/wp-content/themes/bestvpn/css/../../../../wp-content/themes/bestvpn/img/toprow/image4.png');
+          background-image: url('../img/image4.png');
           background-repeat: no-repeat;
           background-position: 10px center;
         }
         &:nth-child(5) {
-          background-image: url('https://www.bestvpn.com/wp-content/themes/bestvpn/css/../../../../wp-content/themes/bestvpn/img/toprow/image5.png');
+          background-image: url('../img/image5.png');
           background-repeat: no-repeat;
           background-position: 20px center;
         }
@@ -1412,7 +1411,7 @@ table.summary_table {
 .top_vpn_head {
   height: 334px;
 
-  background: #f53e45 url('https://www.bestvpn.com/wp-content/themes/bestvpn/css/../img/top_bg.jpg') top right no-repeat;
+  background: #f53e45 url('../img/top_bg.jpg') top right no-repeat;
   h1 {
     font-size: 2.6em !important;
     font-weight: lighter !important;
@@ -1523,16 +1522,16 @@ table.summary_table {
           color: #414044;
         }
         &:nth-child(2) {
-          background-image: url('https://www.bestvpn.com/wp-content/themes/bestvpn/css/../img/icon_features.png');
+          background-image: url('../img/icon_features.png');
         }
         &:nth-child(3) {
-          background-image: url('https://www.bestvpn.com/wp-content/themes/bestvpn/css/../img/icon_reliability.png');
+          background-image: url('../img/icon_reliability.png');
         }
         &:nth-child(4) {
-          background-image: url('https://www.bestvpn.com/wp-content/themes/bestvpn/css/../img/icon_speed.png');
+          background-image: url('../img/icon_speed.png');
         }
         &:nth-child(5) {
-          background-image: url('https://www.bestvpn.com/wp-content/themes/bestvpn/css/../img/icon_customer.png');
+          background-image: url('../img/icon_customer.png');
           label {
             height: 40px;
             padding-top: 12px;
@@ -1631,29 +1630,29 @@ table.summary_table {
     background-repeat: no-repeat;
     background-position: top left;
     &.icon1 {
-      background-image: url('https://www.bestvpn.com/wp-content/themes/bestvpn/css/../img/icon1.png');
+      background-image: url('../img/icon1.png');
     }
     &.icon2 {
-      background-image: url('https://www.bestvpn.com/wp-content/themes/bestvpn/css/../img/icon2.png');
+      background-image: url('../img/icon2.png');
     }
     &.icon3 {
-      background-image: url('https://www.bestvpn.com/wp-content/themes/bestvpn/css/../img/icon3.png');
+      background-image: url('../img/icon3.png');
     }
     &.icon4 {
-      background-image: url('https://www.bestvpn.com/wp-content/themes/bestvpn/css/../img/icon4.png');
+      background-image: url('../img/icon4.png');
     }
     &.icon5 {
-      background-image: url('https://www.bestvpn.com/wp-content/themes/bestvpn/css/../img/icon5.png');
+      background-image: url('../img/icon5.png');
     }
     &.icon6 {
-      background-image: url('https://www.bestvpn.com/wp-content/themes/bestvpn/css/../img/icon6.png');
+      background-image: url('../img/icon6.png');
     }
   }
   ul {
     margin: 15px 0 0 28px;
     padding: 0;
 
-    list-style-image: url('https://www.bestvpn.com/wp-content/themes/bestvpn/css/../img/tick.png');
+    list-style-image: url('../img/tick.png');
     li {
       font-size: .9em;
 
@@ -1667,7 +1666,7 @@ table.summary_table {
     margin: 0 0 20px 20px;
     padding: 8px 8px 8px 55px;
 
-    background: #fff url('https://www.bestvpn.com/wp-content/themes/bestvpn/css/../img/review_icon.png') top left no-repeat;
+    background: #fff url('../img/review_icon.png') top left no-repeat;
     h1 {
       font-size: 1.3em;
       font-weight: normal;
@@ -1734,7 +1733,7 @@ table.summary_table {
 .summary {
   padding: 10px;
 
-  background: url('https://www.bestvpn.com/wp-content/themes/bestvpn/css/../../../../wp-content/uploads/2012/09/striped_lens.png');
+  background: url('../img/striped_lens.png');
   strong {
     position: relative;
     top: -10px;
@@ -1777,13 +1776,13 @@ table.summary_table {
   margin-top: 5px;
   padding: 7px;
 
-  background: url('https://www.bestvpn.com/wp-content/themes/bestvpn/css/../../../../wp-content/uploads/2013/09/border-bg.png');
+  background: url('../img/border-bg.png');
 }
 
 #the_process {
   padding: 10px;
 
-  background: url('https://www.bestvpn.com/wp-content/themes/bestvpn/css/../../../../wp-content/uploads/2012/09/striped_lens.png');
+  background: url('../img/striped_lens.png');
   a img {
     max-width: 600px !important;
     height: auto;
@@ -1809,22 +1808,6 @@ img {
   }
 }
 
-@font-face {
-  font-family: 'Ubuntu';
-  font-weight: 400;
-  font-style: normal;
-
-  src: local('Ubuntu'), url(https://themes.googleusercontent.com/static/fonts/ubuntu/v5/vRvZYZlUaogOuHbBTT1SNevvDin1pK8aKteLpeZ5c0A.woff) format('woff');
-}
-
-
-@font-face {
-  font-family: 'Ubuntu';
-  font-weight: 700;
-  font-style: normal;
-
-  src: local('Ubuntu Bold'), local('Ubuntu-Bold'), url(https://themes.googleusercontent.com/static/fonts/ubuntu/v5/0ihfXUL2emPh0ROJezvraLO3LdcAZYWl9Si6vvxL-qU.woff) format('woff');
-}
 
 
 .post_content {
@@ -2155,7 +2138,7 @@ img {
 }
 
 body {
-  font-family: 'Source Sans Pro',sans-serif,Helvetica;
+  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
   font-size: 110%;
 
   background: #f6f5f7;
@@ -2219,6 +2202,16 @@ a {
     background: #222127;
     .logo {
       text-align: center;
+      a {
+        display: block;
+        margin: 0 auto;
+        width: 113px;
+        height: 68px;
+        overflow: hidden;
+        img {
+          width: 100%;
+        }
+      }
     }
     .menu {
       h2 {
@@ -2229,13 +2222,13 @@ a {
 
         color: #eeedea;
         &.device {
-          background: url('https://www.bestvpn.com/wp-content/themes/bestvpn/css/../img/category_device.png') 0 1px no-repeat;
+          background: url('../img/category_device.png') 0 1px no-repeat;
         }
         &.country {
-          background: url('https://www.bestvpn.com/wp-content/themes/bestvpn/css/../img/category_country.png') 0 1px no-repeat;
+          background: url('../img/category_country.png') 0 1px no-repeat;
         }
         &.features {
-          background: url('https://www.bestvpn.com/wp-content/themes/bestvpn/css/../img/category_features.png') 0 1px no-repeat;
+          background: url('../img/category_features.png') 0 1px no-repeat;
         }
       }
       ul {
@@ -2316,6 +2309,7 @@ a {
 
 .footer {
   background: #48474d;
+  margin: 0 auto;
   .copytext {
     div {
       font-size: .8em;
@@ -2552,7 +2546,7 @@ a {
       padding: 0 0 0 50px;
 
       color: #fff;
-      background: #7a7880 url('https://www.bestvpn.com/wp-content/themes/bestvpn/css/../img/email.png') top left no-repeat;
+      background: #7a7880 url('../img/email.png') top left no-repeat;
     }
     .input {
       padding: 4px 20px;
@@ -2781,19 +2775,11 @@ a {
 .editorChoiceImage {
   padding-top: 23px !important;
 
-  background: url('https://www.bestvpn.com/wp-content/themes/bestvpn/css/../../../../wp-content/uploads/2015/04/editorchoice.png') top center no-repeat;
+  background: url('../img/editorchoice.png') top center no-repeat;
 }
 
 .guide-part img {
   background: none !important;
-}
-
-@font-face {
-  font-family: 'Source Sans Pro';
-  font-weight: 400;
-  font-style: normal;
-
-  src: local('Source Sans Pro'), local('SourceSansPro-Regular'), url(https://themes.googleusercontent.com/static/fonts/sourcesanspro/v7/ODelI1aHBYDBqgeIAH2zlNHq-FFgoDNV3GTKpHwuvtI.woff) format('woff');
 }
 
 
@@ -2836,7 +2822,7 @@ a.btn.green-button {
 }
 
 .ulp-window {
-  font-family: arial,verdana;
+  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
   font-size: 14px;
 
   position: fixed;
@@ -2848,7 +2834,7 @@ a.btn.green-button {
 }
 
 .ulp-inline-window {
-  font-family: arial,verdana;
+  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
   font-size: 14px;
 
   display: none;
@@ -2912,7 +2898,7 @@ a.btn.green-button {
 
 .ulp-input-error {
   border-color: red !important;
-  background-image: url('https://www.bestvpn.com/wp-content/plugins/layered-popups/css/../images/error.png');
+  background-image: url('../img/error.png');
   background-repeat: no-repeat;
   background-position: 100% 50%;
 }
@@ -3092,7 +3078,7 @@ a.btn.green-button {
 
   opacity: .5;
   border-radius: 100px;
-  background: #fff url('https://www.bestvpn.com/wp-content/plugins/layered-popups/css/../images/spinner.gif') center center no-repeat;
+  background: #fff url('../img/spinner.gif') center center no-repeat;
   box-shadow: 0 0 8px rgba(0, 0, 0, .5);
 }
 
@@ -5080,14 +5066,356 @@ a.btn.green-button {
 
 
 
+div.bp-wrap-lwp {
+  position: relative;
+}
 
+ul.bp-list-with-popups {
+  overflow: visible;
 
+  margin: 0;
+  padding: 0;
 
+  list-style: none;
 
+  border: 0;
+  > li {
+    float: left;
+    overflow: visible;
 
+    margin: 0 10px 10px 0;
+    padding: 0;
 
+    border: 0;
+    background: none;
+  }
+}
 
-@import 'original/providers';
+div {
+  &.bp-item-element,
+  &.bp-item-element2 {
+    font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+    font-size: 18px;
+
+    width: 190px;
+    padding: 15px;
+
+    cursor: pointer;
+    text-align: center;
+
+    border: 1px solid #c0c0c0;
+    border-radius: 8px;
+    background: white;
+  }
+  &.bp-item-element > p,
+  &.bp-item-element2 > p {
+    font-size: 22px;
+    line-height: 1em;
+
+    margin: 10px 0 0 0;
+    padding: 10px 0 0 0;
+
+    color: red;
+    border-top: 1px dashed #d0d0d0;
+  }
+  &.bp-item-element:hover {
+    box-shadow: inset 0 0 20px rgba(0, 0, 0, .2);
+  }
+  &.bp-popup-element {
+    font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+    font-size: 18px;
+    line-height: 1.2em;
+
+    display: none;
+
+    width: 260px;
+    padding: 30px;
+
+    cursor: auto;
+    text-align: center;
+
+    border-radius: 8px;
+    background: #d0ec6f;
+    > {
+      p {
+        margin: 0;
+
+        text-align: left;
+        + p {
+          margin-top: 10px;
+          padding-top: 10px;
+
+          border-top: 1px dashed white;
+        }
+        > {
+          b {
+            font-weight: bold;
+
+            color: #7ea724;
+          }
+          span {
+            font-weight: bold;
+
+            color: #333;
+          }
+        }
+      }
+      span > a {
+        font-size: 15px;
+
+        color: #7ea724;
+      }
+    }
+  }
+  &.bp-item-element2 {
+    border: 1px solid white;
+    background: white;
+  }
+}
+
+#bp-shaded-background {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+
+  display: none;
+
+  width: 100%;
+  height: 100%;
+
+  background: black;
+}
+
+.bp_compare_head {
+  font-size: 17px;
+  font-weight: bold;
+  line-height: 35px;
+
+  padding: 5px 10px 5px 10px;
+  form {
+    float: right;
+
+    margin-left: 5px;
+  }
+}
+
+.bp_compare_table {
+  width: 100%;
+
+  table-layout: fixed;
+  td {
+    font-size: 12px;
+
+    padding: 6px 2px 6px 10px;
+
+    text-align: center;
+    vertical-align: middle;
+
+    border: 1px solid #e8e8e8;
+    &.faceoff {
+      font-size: 15px;
+    }
+    &.fld-logo_html2.faceoff a img {
+      height: 45px !important;
+    }
+    a.btn.green-button.faceoff {
+      font-size: 20px;
+    }
+    &.prop {
+      width: 160px;
+
+      background-color: #f4f4f4;
+    }
+  }
+  tr.alt-row {
+    background-color: #f4f4f4;
+  }
+  td {
+    &.fld-price {
+      font-size: 18px !important;
+
+      color: #709f13;
+    }
+    &.section_head {
+      padding: 5px 0 5px 0;
+
+      border: none;
+      > div {
+        font-size: 15px;
+        font-weight: bold;
+        line-height: 46px;
+
+        height: 46px;
+
+        text-transform: uppercase;
+
+        color: black;
+        border-radius: 6px;
+      }
+    }
+  }
+}
+
+.bp-profile-button {
+  font-size: 18px;
+  font-weight: bold;
+
+  display: block;
+
+  padding: 10px 20px 10px 20px;
+
+  text-align: center;
+  text-decoration: none;
+
+  color: white !important;
+  border-radius: 6px;
+  background: url('../img/profile-button-bg.png') repeat-x 0 0;
+  &:hover {
+    text-decoration: none;
+
+    color: white;
+    background-position: 0 -60px;
+  }
+}
+
+div {
+  &.rating-stars {
+    width: 98px;
+    height: 17px;
+    margin: 0 auto;
+
+    background: url('../img/rating-stars.png') 0 0 no-repeat;
+    > div {
+      height: 100%;
+
+      background: url('../img/rating-stars.png') 0 -17px no-repeat;
+    }
+  }
+  &.icon-tick {
+    width: 28px;
+    height: 28px;
+    margin: 0 auto;
+
+    background: url('../img/tick-2.png') 2px 0 no-repeat;
+  }
+  &.icon-cross {
+    width: 28px;
+    height: 28px;
+    margin: 0 auto;
+
+    background: url('../img/tick-2.png') 2px 0 no-repeat;
+    background: url('../img/cross.png') 0 0;
+  }
+}
+
+a {
+  &.guide-link,
+  &.guide-area-link {
+    font-size: 17px;
+    font-weight: bold;
+    line-height: 1em;
+
+    display: block;
+    float: left;
+
+    width: 135px;
+    padding: 0 5px 0 5px;
+
+    text-align: center;
+    text-decoration: none;
+  }
+  &.guide-link > div.guide-icon {
+    width: 100%;
+    height: 110px;
+    margin: 0 auto 0 auto;
+
+    cursor: pointer;
+    text-decoration: none;
+
+    background: url('../img/guide-icons2.jpg');
+  }
+  &.guide-area-link {
+    width: 279px;
+
+    text-decoration: none;
+    > div.guide-icon {
+      width: 100%;
+      height: 245px;
+      margin: 0 auto 0 auto;
+
+      cursor: pointer;
+      text-decoration: none;
+
+      background: url('../img/guide-icons2.jpg');
+    }
+  }
+}
+
+.guide-icon-mac {
+  background-position: (-135px) 0 !important;
+}
+
+.guide-icon-win {
+  background-position: (-270px) 0 !important;
+}
+
+.guide-icon-linux {
+  background-position: (-405px) 0 !important;
+}
+
+.guide-icon-iphone {
+  background-position: (-540px) 0 !important;
+}
+
+.guide-icon-android {
+  background-position: (-675px) 0 !important;
+}
+
+.guide-icon-free {
+  background-position: (-540px) -110px !important;
+}
+
+.guide-icon-unlimited {
+  background-position: (-405px) -110px !important;
+}
+
+.guide-icon-sharing {
+  background-position: (-270px) -110px !important;
+}
+
+.guide-icon-ftp {
+  background-position: (-135px) -110px !important;
+}
+
+.guide-icon-business {
+  background-position: 0 -110px !important;
+}
+
+.guide-icon-versioning {
+  background-position: 0 0 !important;
+}
+
+.guide-icon-faceoff {
+  background-position: (-675px) -110px !important;
+}
+
+.guide-icon-usa {
+  background-position: 0 -220px !important;
+}
+
+.guide-icon-eur {
+  background-position: (-279px) -220px !important;
+}
+
+.guide-icon-asia {
+  background-position: (-558px) -220px !important;
+}
+
+.guide-part {
+  margin-bottom: 45px;
+}
+
 
 .comparison_table {
   width: 100%;
@@ -5098,7 +5426,7 @@ a.btn.green-button {
   border: 1px solid #ccc;
   th,
   td {
-    font-family: Arial;
+    font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
     font-size: 10pt;
     font-weight: bold;
 
@@ -5151,7 +5479,7 @@ ul.ratings {
 }
 
 .rating_value {
-  font-family: Arial;
+  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
   font-size: 8pt;
 
   padding: 1px 3px;
@@ -5170,9 +5498,9 @@ ul.ratings {
     width: 12px;
     height: 12px;
 
-    background: url(/wp-content/plugins/review-site/images/star-empty.gif) no-repeat;
+    background: url(../img/star-empty.gif) no-repeat;
   }
   .on {
-    background: url(/wp-content/plugins/review-site/images/star.gif) no-repeat;
+    background: url(../img/star.gif) no-repeat;
   }
 }
