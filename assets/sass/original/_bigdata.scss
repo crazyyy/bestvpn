@@ -560,7 +560,7 @@ nav {
 
 img {
   border: 0;
-}  -ms-interpolation-mode: bicubic;
+}
 
 
 svg:not(:root) {
@@ -2736,12 +2736,10 @@ a.btn.green-button {
 .ulp-link-button-red {
   border: 1px solid #b20000;
   background-color: rgb(255, 48, 25);
-  background-image: linear-gradient(top, rgba(255, 48, 25, 1) 0%, rgba(207, 4, 4, 1) 100%);
   background-image: linear-gradient(to bottom, rgba(255, 48, 25, 1) 0%, rgba(207, 4, 4, 1) 100%);
   &:visited {
     border: 1px solid #b20000;
     background-color: rgb(255, 48, 25);
-    background-image: linear-gradient(top, rgba(255, 48, 25, 1) 0%, rgba(207, 4, 4, 1) 100%);
     background-image: linear-gradient(to bottom, rgba(255, 48, 25, 1) 0%, rgba(207, 4, 4, 1) 100%);
   }
 }
@@ -2750,12 +2748,10 @@ a.btn.green-button {
   border: 1px solid #307818;
   background-color: rgb(72, 180, 36);
   background-image: linear-gradient(to bottom, rgba(72, 180, 36, 1) 0%, rgba(48, 120, 24, 1) 100%);
-  background-image: linear-gradient(top, rgba(72, 180, 36, 1) 0%, rgba(48, 120, 24, 1) 100%);
   &:visited {
     border: 1px solid #307818;
     background-color: rgb(72, 180, 36);
     background-image: linear-gradient(to bottom, rgba(72, 180, 36, 1) 0%, rgba(48, 120, 24, 1) 100%);
-    background-image: linear-gradient(top, rgba(72, 180, 36, 1) 0%, rgba(48, 120, 24, 1) 100%);
   }
 }
 
@@ -2763,12 +2759,10 @@ a.btn.green-button {
   border: 1px solid #306090;
   background-color: rgb(40, 80, 200);
   background-image: linear-gradient(to bottom, rgba(40, 80, 200, 1) 0%, rgba(30, 47, 144, 1) 100%);
-  background-image: linear-gradient(top, rgba(40, 80, 200, 1) 0%, rgba(30, 47, 144, 1) 100%);
   &:visited {
     border: 1px solid #306090;
     background-color: rgb(40, 80, 200);
     background-image: linear-gradient(to bottom, rgba(40, 80, 200, 1) 0%, rgba(30, 47, 144, 1) 100%);
-    background-image: linear-gradient(top, rgba(40, 80, 200, 1) 0%, rgba(30, 47, 144, 1) 100%);
   }
 }
 
@@ -2776,12 +2770,10 @@ a.btn.green-button {
   border: 1px solid #e5a904;
   background-color: rgb(255, 210, 90);
   background-image: linear-gradient(to bottom, rgba(255, 210, 90, 1) 0%, rgba(255, 190, 0, 1) 100%);
-  background-image: linear-gradient(top, rgba(255, 210, 90, 1) 0%, rgba(255, 190, 0, 1) 100%);
   &:visited {
     border: 1px solid #e5a904;
     background-color: rgb(255, 210, 90);
     background-image: linear-gradient(to bottom, rgba(255, 210, 90, 1) 0%, rgba(255, 190, 0, 1) 100%);
-    background-image: linear-gradient(top, rgba(255, 210, 90, 1) 0%, rgba(255, 190, 0, 1) 100%);
   }
 }
 
@@ -2789,12 +2781,10 @@ a.btn.green-button {
   border: 1px solid #e56e0d;
   background-color: rgb(255, 170, 78);
   background-image: linear-gradient(to bottom, rgba(255, 170, 78, 1) 0%, rgba(255, 120, 10, 1) 100%);
-  background-image: linear-gradient(top, rgba(255, 170, 78, 1) 0%, rgba(255, 120, 10, 1) 100%);
   &:visited {
     border: 1px solid #e56e0d;
     background-color: rgb(255, 170, 78);
     background-image: linear-gradient(to bottom, rgba(255, 170, 78, 1) 0%, rgba(255, 120, 10, 1) 100%);
-    background-image: linear-gradient(top, rgba(255, 170, 78, 1) 0%, rgba(255, 120, 10, 1) 100%);
   }
 }
 
@@ -2802,74 +2792,61 @@ a.btn.green-button {
   border: 1px solid #cc026a;
   background-color: rgb(255, 90, 170);
   background-image: linear-gradient(to bottom, rgba(255, 90, 170, 1) 0%, rgba(240, 0, 120, 1) 100%);
-  background-image: linear-gradient(top, rgba(255, 90, 170, 1) 0%, rgba(240, 0, 120, 1) 100%);
   &:visited {
     border: 1px solid #cc026a;
     background-color: rgb(255, 90, 170);
     background-image: linear-gradient(to bottom, rgba(255, 90, 170, 1) 0%, rgba(240, 0, 120, 1) 100%);
-    background-image: linear-gradient(top, rgba(255, 90, 170, 1) 0%, rgba(240, 0, 120, 1) 100%);
   }
 }
 
 .ulp-link-button-black {
   border: 1px solid #000;
   background-color: rgb(72, 72, 72);
-  background-image: linear-gradient(top, rgba(72, 72, 72, 1) 0%, rgba(10, 10, 10, 1) 100%);
-  background-image: linear-gradient(to bottom, rgba(72, 72, 72, 1) 0%, rgba(10, 10, 10, 1) 100%);
   &:visited {
     border: 1px solid #000;
     background-color: rgb(72, 72, 72);
-    background-image: linear-gradient(top, rgba(72, 72, 72, 1) 0%, rgba(10, 10, 10, 1) 100%);
-    background-image: linear-gradient(to bottom, rgba(72, 72, 72, 1) 0%, rgba(10, 10, 10, 1) 100%);
   }
 }
 
 .ulp-link-button-red {
   &:hover, &:focus, &:active {
     background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.01) 0%, rgba(255, 255, 255, 0.01) 100%);
-    background-image: linear-gradient(top, rgba(255, 255, 255, 0.01) 0%, rgba(255, 255, 255, 0.01) 100%);
   }
 }
 
 .ulp-link-button-green {
   &:hover, &:focus, &:active {
     background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.01) 0%, rgba(255, 255, 255, 0.01) 100%);
-    background-image: linear-gradient(top, rgba(255, 255, 255, 0.01) 0%, rgba(255, 255, 255, 0.01) 100%);
   }
 }
 
 .ulp-link-button-blue {
   &:hover, &:focus, &:active {
     background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.01) 0%, rgba(255, 255, 255, 0.01) 100%);
-    background-image: linear-gradient(top, rgba(255, 255, 255, 0.01) 0%, rgba(255, 255, 255, 0.01) 100%);
   }
 }
 
 .ulp-link-button-yellow {
   &:hover, &:focus, &:active {
     background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.01) 0%, rgba(255, 255, 255, 0.01) 100%);
-    background-image: linear-gradient(top, rgba(255, 255, 255, 0.01) 0%, rgba(255, 255, 255, 0.01) 100%);
   }
 }
 
 .ulp-link-button-pink {
   &:hover, &:focus, &:active {
     background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.01) 0%, rgba(255, 255, 255, 0.01) 100%);
-    background-image: linear-gradient(top, rgba(255, 255, 255, 0.01) 0%, rgba(255, 255, 255, 0.01) 100%);
   }
 }
 
 .ulp-link-button-black {
   &:hover, &:focus, &:active {
     background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.01) 0%, rgba(255, 255, 255, 0.01) 100%);
-    background-image: linear-gradient(top, rgba(255, 255, 255, 0.01) 0%, rgba(255, 255, 255, 0.01) 100%);
   }
 }
 
 .ulp-link-button-orange {
   &:hover, &:focus, &:active {
     background-image: linear-gradient(to bottom, rgba(255, 255, 255, 0.01) 0%, rgba(255, 255, 255, 0.01) 100%);
-    background-image: linear-gradient(top, rgba(255, 255, 255, 0.01) 0%, rgba(255, 255, 255, 0.01) 100%);
   }
 }
 

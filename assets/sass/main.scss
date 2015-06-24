@@ -9,9 +9,5158 @@
 @import 'sprite';
 
 
-@import 'original/bigdata';
+
+.clear {
+  clear: both;
+}
+
+.clear_space {
+  clear: both;
+
+  height: 5px;
+}
+
+.ta_magic_review {
+  position: absolute;
+  left: -9999px;
+}
+
+.ta_rating_container {
+  font-size: 14px;
+  line-height: 20px;
+
+  width: 300px;
+
+  border: 1px solid #e0e0e0;
+  border-radius: 3px 3px 3px 3px;
+}
+
+#ta_rating {
+  clear: both;
+
+  padding: 10px;
+
+  border: 2px solid white;
+  border-radius: 3px;
+  background: none repeat scroll 0 0 #f6f6f6;
+  .ta_description {
+    clear: both;
+  }
+  .rating_btn {
+    float: right;
+    clear: both;
+
+    margin-top: 20px;
+  }
+  a {
+    text-decoration: none;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  dt {
+    font-weight: normal;
+
+    float: left;
+  }
+  dd {
+    font-weight: normal;
+
+    float: left;
+
+    margin-bottom: 0 !important;
+    margin-left: 15px;
+  }
+  dl {
+    margin: 0;
+  }
+  dt {
+    clear: both;
+  }
+}
+
+.ta_rating {
+  position: relative;
+
+  width: 80px;
+  height: 16px;
+
+  background: transparent url('https://www.bestvpn.com/wp-content/plugins/author-hreview/style/../images/stars.png') 0 -16px repeat-x;
+  .result {
+    position: absolute;
+    z-index: 102;
+    top: 0;
+    left: 0;
+
+    height: 16px;
+
+    text-indent: -9999px;
+
+    background: transparent url('https://www.bestvpn.com/wp-content/plugins/author-hreview/style/../images/stars.png') 0 0 repeat-x;
+  }
+}
+
+.result {
+  text-indent: -9999px;
+}
+
+.ta_headline_meta,
+.rating_date {
+  font-size: 10px;
+
+  cursor: help;
+
+  color: #999;
+}
+
+#ta_rating {
+  h3 {
+    font-size: 14px;
+
+    margin: 10px 0 5px 0;
+  }
+  div.hr {
+    height: 1px;
+    margin: 5px 0 5px 0;
+
+    background: #e0e0e0;
+    hr {
+      display: none;
+    }
+  }
+  p {
+    margin-bottom: .2em;
+  }
+}
+
+#ta_post_review_after {
+  margin: 10px;
+  padding: 15px;
+
+  border-top: dotted 1px #ddd;
+  border-bottom: dotted 1px #ddd;
+  background: none repeat scroll 0 0 #f6f6f6;
+  ul {
+    margin-top: 10px;
+    li {
+      float: left;
+
+      list-style: outside none;
+    }
+  }
+  .price {
+    width: 100px;
+    height: 32px;
+    padding-left: 40px;
+
+    background: transparent url('https://www.bestvpn.com/wp-content/plugins/author-hreview/style/../images/price.png') no-repeat 0 50%;
+    span {
+      position: relative;
+
+      display: block;
+
+      margin-top: 8px;
+    }
+  }
+  .after_rating {
+    width: 160px;
+  }
+  .after_button {
+    float: right;
+
+    margin-top: 8px;
+    margin-right: 20px;
+  }
+  dd {
+    font-size: 110%;
+
+    display: block;
+
+    margin-top: 5px;
+    margin-bottom: 0 !important;
+
+    color: #333;
+  }
+  span {
+    color: #999;
+  }
+}
+
+#ar_rating_home {
+  clear: both;
+
+  padding: 10px;
+
+  border: 2px solid white;
+  border-radius: 3px;
+  background: none repeat scroll 0 0 #f6f6f6;
+}
+
+.ar_rating_home_span {
+  float: left;
+
+  height: 16px !important;
+  margin: 3px 0 3px 0;
+  margin: 3px 5px 0 0 !important;
+}
+
+.ar_headline_meta_home span {
+  height: 16px !important;
+  margin-top: 0;
+}
+
+.ar_rating_home {
+  position: relative;
+
+  width: 80px !important;
+  height: 16px !important;
+
+  background: transparent url('https://www.bestvpn.com/wp-content/plugins/author-hreview/style/../images/stars.png') 0 -16px repeat-x;
+  .ar_result_home {
+    position: absolute;
+    z-index: 102;
+    top: 0;
+    left: 0;
+
+    height: 16px;
+
+    text-indent: -9999px;
+
+    background: transparent url('https://www.bestvpn.com/wp-content/plugins/author-hreview/style/../images/stars.png') 0 0 repeat-x;
+  }
+}
+
+.ar_result_home {
+  text-indent: -9999px;
+}
+
+.ar_headline_meta_home {
+  font-size: 10px;
+
+  cursor: help;
+
+  color: #999;
+}
+
+.ta_widget_list_item {
+  clear: both;
+}
+
+.ta_widget_post_item {
+  float: left;
+
+  margin: 0 0 10px 10px;
+}
+
+.ta_widget_rating {
+  float: right;
+
+  margin-right: 10px;
+}
+
+.widget_recent_reviews {
+  ul {
+    margin: 0 !important;
+  }
+  li {
+    padding-left: 0 !important;
+
+    list-style: none !important;
+    list-style-image: none;
+  }
+}
+
+#sidebars .ta_rating_container {
+  float: none;
+
+  margin: auto;
+}
+
+.ta_box_right {
+  float: right;
+
+  margin: 0 0 10px 10px;
+}
+
+.ta_box_left {
+  float: left;
+
+  margin: 0 10px 10px 0;
+}
+
+.ta_box_align_none {
+  float: none;
+  clear: both;
+
+  margin: 10px;
+}
+
+.ar_button {
+  font-weight: bold;
+
+  display: inline;
+
+  padding: 5px 10px;
+
+  cursor: pointer;
+  text-decoration: none !important;
+
+  color: #fff !important;
+  border: none;
+  border-radius: 3px;
+  background: #777 url('https://www.bestvpn.com/wp-content/plugins/author-hreview/style/../images/bg_button.png') repeat-x bottom;
+  text-shadow: 1px 1px #666;
+  &:hover {
+    background-position: 0 center;
+  }
+  &:active {
+    position: relative;
+    top: 1px;
+
+    padding: 6px 10px 4px;
+
+    background-position: 0 top;
+  }
+  &.ar_red {
+    background-color: #e50000;
+  }
+  &.ar_purple {
+    background-color: #9400bf;
+  }
+  &.ar_green {
+    background-color: #58aa00;
+  }
+  &.ar_orange {
+    background-color: #f97f26;
+  }
+  &.ar_blue {
+    background-color: #2c6da0;
+  }
+  &.ar_yellow {
+    background-color: #fc0;
+  }
+  &.ar_black {
+    background-color: #333;
+  }
+  &.ar_white {
+    color: #000 !important;
+    background-color: #fff;
+    text-shadow: 1px 1px #fff;
+  }
+  &.ar_gray {
+    font-weight: normal !important;
+
+    color: #333 !important;
+    background-color: #f1f1f1;
+    text-shadow: 1px 1px #fff;
+  }
+  &.ar_small {
+    font-size: 75%;
+
+    padding: 3px 7px;
+    &:active {
+      padding: 4px 7px 2px;
+
+      background-position: 0 top;
+    }
+  }
+  &.ar_medium {
+    font-size: 90%;
+
+    height: 20px;
+    padding: 5px 8px;
+    &:active {
+      padding: 5px 8px 4px;
+
+      background-position: 0 top;
+    }
+  }
+  &.ar_large {
+    font-size: 160%;
+
+    height: 40px;
+    padding: 7px 12px;
+    &:active {
+      padding: 8px 12px 6px;
+
+      background-position: 0 top;
+    }
+  }
+}
+
+div {
+  &.wpcf7 {
+    margin: 0;
+    padding: 0;
+  }
+  &.wpcf7-response-output {
+    margin: 2em .5em 1em;
+    padding: .2em 1em;
+  }
+  &.wpcf7 .screen-reader-response {
+    position: absolute;
+
+    overflow: hidden;
+    clip: rect(1px, 1px, 1px, 1px);
+
+    width: 1px;
+    height: 1px;
+    margin: 0;
+    padding: 0;
+
+    border: 0;
+  }
+  &.wpcf7-mail-sent-ok {
+    border: 2px solid #398f14;
+  }
+  &.wpcf7-mail-sent-ng {
+    border: 2px solid #f00;
+  }
+  &.wpcf7-spam-blocked {
+    border: 2px solid #ffa500;
+  }
+  &.wpcf7-validation-errors {
+    border: 2px solid #f7e700;
+  }
+}
+
+span {
+  &.wpcf7-form-control-wrap {
+    position: relative;
+  }
+  &.wpcf7-not-valid-tip {
+    font-size: 1em;
+
+    display: block;
+
+    color: #f00;
+  }
+}
+
+.use-floating-validation-tip span.wpcf7-not-valid-tip {
+  position: absolute;
+  z-index: 100;
+  top: 20%;
+  left: 20%;
+
+  padding: .2em .8em;
+
+  border: 1px solid #f00;
+  background: #fff;
+}
+
+span.wpcf7-list-item {
+  margin-left: .5em;
+}
+
+.wpcf7-display-none {
+  display: none;
+}
+
+div.wpcf7 {
+  img.ajax-loader {
+    margin-left: 4px;
+
+    vertical-align: middle;
+
+    border: none;
+  }
+  div.ajax-error {
+    display: none;
+  }
+  .placeheld {
+    color: #888;
+  }
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+nav,
+section,
+summary {
+  display: block;
+}
+
+audio,
+canvas,
+video {
+  display: inline-block;
+
+  *display: inline;
+  *zoom: 1;
+}
+
+audio:not([controls]) {
+  display: none;
+
+  height: 0;
+}
+
+[hidden] {
+  display: none;
+}
+
+html {
+  font-family: sans-serif;
+  font-size: 100%;
+}
+
+button,
+input,
+select,
+textarea {
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+a {
+  &:focus {
+    outline: thin dotted;
+  }
+  &:active,
+  &:hover {
+    outline: 0;
+  }
+}
+
+h1 {
+  font-size: 2em;
+
+  margin: .67em 0;
+}
+
+h2 {
+  font-size: 1.5em;
+
+  margin: .83em 0;
+}
+
+h3 {
+  font-size: 1.17em;
+
+  margin: 1em 0;
+}
+
+h4 {
+  font-size: 1em;
+
+  margin: 1.33em 0;
+}
+
+h5 {
+  font-size: .83em;
+
+  margin: 1.67em 0;
+}
+
+h6 {
+  font-size: .67em;
+
+  margin: 2.33em 0;
+}
+
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+b,
+strong {
+  font-family: Arial;
+  font-weight: bold !important;
+}
+
+blockquote {
+  margin: 1em 40px;
+}
+
+dfn {
+  font-style: italic;
+}
+
+hr {
+  box-sizing: content-box;
+  height: 0;
+}
+
+mark {
+  color: #000;
+  background: #ff0;
+}
+
+p,
+pre {
+  margin: 1em 0;
+}
+
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace,serif;
+  font-size: 1em;
+
+  _font-family: 'courier new',monospace;
+}
+
+pre {
+  white-space: pre;
+  white-space: pre-wrap;
+  word-wrap: break-word;
+}
+
+q {
+  quotes: none;
+  &:before,
+  &:after {
+    content: '';
+    content: none;
+  }
+}
+
+small {
+  font-size: 80%;
+}
+
+sub {
+  font-size: 75%;
+  line-height: 0;
+
+  position: relative;
+
+  vertical-align: baseline;
+}
+
+sup {
+  font-size: 75%;
+  line-height: 0;
+
+  position: relative;
+  top: -.5em;
+
+  vertical-align: baseline;
+}
+
+sub {
+  bottom: -.25em;
+}
+
+dl,
+menu,
+ol,
+ul {
+  margin: 1em 0;
+}
+
+
+dd {
+  margin: 0 0 0 40px;
+}
+
+menu,
+ol,
+ul {
+  padding: 0 0 0 40px;
+}
+
+nav {
+  ul,
+  ol {
+    list-style: none;
+    list-style-image: none;
+  }
+}
+
+img {
+  border: 0;
+}
+
+
+svg:not(:root) {
+  overflow: hidden;
+}
+
+figure,
+form {
+  margin: 0;
+}
+
+fieldset {
+  margin: 0 2px;
+  padding: .35em .625em .75em;
+
+  border: 1px solid silver;
+}
+
+legend {
+  padding: 0;
+
+  white-space: normal;
+
+  border: 0;
+
+  *margin-left: -7px;
+}
+
+button,
+input,
+select,
+textarea {
+  font-size: 100%;
+
+  margin: 0;
+
+  vertical-align: baseline;
+
+  *vertical-align: middle;
+}
+
+button,
+input {
+  line-height: normal;
+}
+
+button,
+select {
+  text-transform: none;
+}
+
+button,
+html input[type='button'] {
+  cursor: pointer;
+
+  *overflow: visible;
+}
+
+input {
+  &[type='reset'],
+  &[type='submit'] {
+    cursor: pointer;
+
+    *overflow: visible;
+  }
+}
+
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+input {
+  &[type='checkbox'],
+  &[type='radio'] {
+    box-sizing: border-box;
+    padding: 0;
+
+    *height: 13px;
+    *width: 13px;
+  }
+  &[type='search'] {
+    box-sizing: content-box;
+  }
+}
+
+
+
+textarea {
+  overflow: auto;
+
+  vertical-align: top;
+}
+
+table {
+  border-spacing: 0;
+  border-collapse: collapse;
+}
+
+.ta_rating_container {
+  display: none;
+}
+
+.flyer_vpn_bar {
+  font-size: 100%;
+
+  display: none;
+
+  height: 90px;
+}
+
+.container {
+  .vpn_bar {
+    .menu {
+      h2 {
+        margin: 15px 0 0 0;
+        padding: 0 0 4px 25px;
+      }
+      li {
+        float: left;
+
+        margin: 0 15px 0 0;
+      }
+    }
+  }
+  .wrapper .top_menu {
+    float: left;
+
+    width: 916px;
+    height: 90px;
+    margin: 0 0 8px 0;
+    div.main_menu ul li {
+      height: 90px;
+      padding: 10px;
+    }
+  }
+}
+
+.social {
+  text-align: center;
+  #yt {
+    margin-top: 9px;
+  }
+}
+
+.container .wrapper {
+  .top_menu div.social_menu {
+    display: 0;
+    display: table;
+
+    width: 100%;
+    height: 0;
+
+    table-layout: fixed;
+    ul {
+      display: none;
+      li {
+        display: table-cell;
+
+        text-align: center;
+        vertical-align: middle;
+        a {
+          padding: 10px;
+        }
+      }
+    }
+  }
+  .content {
+    margin: 0 8px 15px 8px;
+  }
+}
+
+.footer .copytext {
+  margin: 13px 0;
+  padding: 15px 0 0 0;
+  div {
+    margin: 0 2%;
+    padding: 0 0 15px 0;
+
+    border-width: 0 0 1px 0;
+  }
+}
+
+@media only screen and (min-width: 480px) {
+  .container {
+    .vpn_bar {
+      font-size: 100%;
+
+      float: left;
+
+      width: 200px;
+      height: 90px;
+      margin-bottom: 20px;
+
+      vertical-align: top;
+      .menu {
+        margin: 0 8px 25px 35px;
+        padding: 0;
+        h2 {
+          margin: 25px 0 8px 0;
+          padding: 0 0 0 25px;
+        }
+        li {
+          float: none;
+
+          margin: 0 0 6px 0;
+        }
+      }
+    }
+    .wrapper {
+      display: table-cell;
+
+      vertical-align: top;
+      .top_menu {
+        margin: 0 0 15px 0;
+        div.main_menu {
+          display: table;
+
+          width: 100%;
+          height: 60px;
+          ul {
+            display: table-row;
+            li {
+              display: table-cell;
+
+              padding: 0;
+
+              text-align: center;
+              vertical-align: middle;
+            }
+          }
+        }
+      }
+      .content {
+        margin: 0 15px 15px 15px;
+      }
+    }
+  }
+  .footer {
+    display: table;
+
+    width: 100%;
+    padding-top: 13px;
+    .copytext {
+      display: table-cell;
+
+      width: 160px;
+      padding: 0;
+
+      vertical-align: top;
+      div {
+        margin: 0 0 0 20;
+        padding: 20px 0;
+
+        border-width: 0 1px 0 0;
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .flyer_vpn_bar {
+    position: fixed;
+    z-index: 0;
+    top: 0;
+    left: 0;
+
+    display: block;
+
+    _position: absolute;
+  }
+  .container .wrapper {
+    .top_menu {
+      margin: 0;
+    }
+    .content_wrapper {
+      display: table;
+      clear: left;
+
+      max-width: 1116px;
+      margin-top: 60px;
+      .content {
+        display: table-cell;
+        clear: left;
+
+        vertical-align: top;
+      }
+    }
+  }
+  .footer {
+    position: absolute;
+    z-index: 20;
+    .copytext {
+      width: 180px;
+    }
+    .partners ul li {
+      float: left;
+
+      height: 50px;
+      margin: 0 25px 0 25px;
+    }
+  }
+}
+
+@media only screen and (min-width: 1140px) {
+  .container {
+    max-width: 1116px;
+    .wrapper {
+      .top_menu {
+        margin: 0;
+        div {
+          &.main_menu {
+            float: left;
+
+            width: 100%;
+            height: 90px;
+            li {
+              padding: 0 15px !important;
+            }
+          }
+          &.social_menu {
+            float: right;
+
+            width: 8.5%;
+            height: 90px;
+            ul {
+              display: table-row;
+            }
+          }
+        }
+      }
+      .content_wrapper {
+        display: table;
+        clear: both;
+
+        width: 100%;
+        margin-top: 60px;
+        .content {
+          display: table-cell;
+
+          vertical-align: top;
+        }
+        .sidebar {
+          display: table-cell;
+
+          width: 260px;
+
+          vertical-align: top;
+        }
+      }
+    }
+  }
+  .footer {
+    max-width: 1116px;
+    .copytext {
+      width: 200px;
+    }
+  }
+}
+
+.single_sidebar {
+  max-width: 260px;
+
+  background: #fff;
+  h3 {
+    font-size: 1.1em;
+    font-weight: normal;
+
+    margin: 0;
+    padding: 8px 18px;
+  }
+  h4 {
+    font-size: 1em;
+    font-weight: normal;
+
+    margin: 0 0 4px 0;
+    padding: 0;
+    a {
+      text-decoration: none;
+
+      color: #000;
+      &:hover {
+        color: #7a7880;
+      }
+    }
+  }
+  .preimg {
+    width: 100%;
+    margin-bottom: 15px;
+
+    border: 0;
+  }
+  .posticon {
+    float: left;
+
+    width: 38px;
+    height: 38px;
+    margin: 0 10px 0 0;
+  }
+  .pw {
+    padding: 0 17px 15px 17px;
+
+    border-bottom: 1px solid #ededed;
+  }
+  .first_info {
+    font-size: .8em;
+
+    margin-top: 4px;
+
+    color: #7a7880;
+    a {
+      text-decoration: none;
+
+      color: #7a7880;
+      &:hover {
+        color: #000;
+      }
+    }
+  }
+  .side_post {
+    margin: 12px 14px 0 16px;
+    padding-bottom: 12px;
+
+    border-bottom: 1px solid #ededed;
+    &.last {
+      border-bottom: 0;
+    }
+    img {
+      float: left;
+
+      width: 50px;
+      height: 50px;
+      margin: 4px 16px 2px 0;
+    }
+    .text {
+      font-size: .8em;
+      a {
+        text-decoration: none;
+
+        color: #000;
+        &:hover {
+          color: #7a7880;
+        }
+      }
+      .info {
+        font-size: .9em;
+
+        clear: left;
+
+        margin-top: 4px;
+
+        color: #7a7880;
+        a {
+          text-decoration: none;
+
+          color: #7a7880;
+          &:hover {
+            color: #000;
+          }
+        }
+      }
+    }
+  }
+}
+
+p .btn {
+  display: inline-block;
+
+  margin: 5px 0;
+  padding: 8px 20px;
+
+  white-space: nowrap;
+  text-decoration: none;
+
+  color: #fff;
+  border-width: 0 0 2px;
+  border-style: solid;
+  border-color: #2a9d26;
+  border-radius: 2px !important;
+  background: #5bd057;
+  background-clip: padding-box !important;
+  text-shadow: 1px 1px 1px #414044;
+  &:hover {
+    color: #fff;
+  }
+}
+
+.redbtn {
+  display: inline-block;
+
+  margin: 5px 0;
+  padding: 8px 20px;
+
+  white-space: nowrap;
+  text-decoration: none;
+
+  color: #fff;
+  border-width: 0 0 2px 0;
+  border-style: solid;
+  border-color: #d51c27;
+  border-radius: 2px !important;
+  background: #f64046;
+  background-clip: padding-box !important;
+  text-shadow: 1px 1px 1px #414044;
+  &:hover {
+    color: #fff;
+  }
+}
+
+.greenbtn {
+  display: inline-block;
+
+  margin: 5px 0;
+  padding: 8px 20px;
+
+  white-space: nowrap;
+  text-decoration: none;
+
+  color: #fff;
+  border-width: 0 0 2px;
+  border-style: solid;
+  border-color: #25a85c;
+  border-radius: 2px !important;
+  background: #2ecc71;
+  background-clip: padding-box !important;
+  text-shadow: 1px 1px 1px #414044;
+  &:hover {
+    color: #fff;
+  }
+}
+
+.author_bottom {
+  padding: 14px;
+
+  background: #ededed;
+  img {
+    border: 3px solid #fff;
+    border-radius: 1px !important;
+    background-clip: padding-box !important;
+  }
+  &:after {
+    font-size: 0;
+
+    display: block;
+    visibility: hidden;
+    clear: both;
+
+    height: 0;
+
+    content: ' ';
+  }
+}
+
+table.summary_table {
+  width: 100%;
+  margin-bottom: 20px;
+
+  border-collapse: collapse;
+  tr {
+    &.toprow {
+      height: 58px;
+      td {
+        font-size: .8em;
+        line-height: 1.25;
+
+        padding: 5px;
+
+        text-transform: uppercase;
+
+        color: #fff;
+        border: 1px solid #fff;
+        border-radius: 0 !important;
+        background: #7a7880;
+        background-clip: padding-box !important;
+        &:first-child {
+          background-color: #333;
+        }
+        &:nth-child(1) {
+          background-color: #333;
+          background-repeat: no-repeat;
+          background-position: 6px center;
+        }
+        &:nth-child(2) {
+          background-image: url('https://www.bestvpn.com/wp-content/themes/bestvpn/css/../../../../wp-content/themes/bestvpn/img/toprow/image2.png');
+          background-repeat: no-repeat;
+          background-position: 10px center;
+        }
+        &:nth-child(3) {
+          padding-left: 15px;
+
+          background-image: url('https://www.bestvpn.com/wp-content/themes/bestvpn/css/../../../../wp-content/themes/bestvpn/img/toprow/image3.png');
+          background-repeat: no-repeat;
+          background-position: 5px center;
+        }
+        &:nth-child(4) {
+          background-image: url('https://www.bestvpn.com/wp-content/themes/bestvpn/css/../../../../wp-content/themes/bestvpn/img/toprow/image4.png');
+          background-repeat: no-repeat;
+          background-position: 10px center;
+        }
+        &:nth-child(5) {
+          background-image: url('https://www.bestvpn.com/wp-content/themes/bestvpn/css/../../../../wp-content/themes/bestvpn/img/toprow/image5.png');
+          background-repeat: no-repeat;
+          background-position: 20px center;
+        }
+      }
+    }
+    &:nth-child(3) td:first-child {
+      background: #fdb53f;
+      h2 {
+        color: #fff !important;
+        border-color: #fff;
+      }
+    }
+    &:nth-child(2n+4) td {
+      background-color: #f6f5f7;
+    }
+  }
+  td:not(.toprow) {
+    padding: 14px;
+
+    text-align: center;
+    a img {
+      background: none;
+    }
+    &:nth-child(2) img {
+      width: 100px;
+      height: auto !important;
+      max-height: 60px;
+    }
+    &:nth-child(4) {
+      a {
+        font-size: 75%;
+
+        color: #111;
+      }
+      b {
+        font-size: 130%;
+      }
+    }
+  }
+  tr:nth-child(3) {
+    img {
+      width: 140px !important;
+    }
+    td:nth-child(5) a {
+      color: #fff;
+      background-color: #5bd057;
+      text-shadow: 1px 1px 1px #414044;
+    }
+  }
+  td:not(.toprow) {
+    &:nth-child(5) a {
+      display: inline-block;
+
+      margin: 5px 0;
+      padding: 8px 20px;
+
+      white-space: nowrap;
+      text-decoration: none;
+
+      color: #888;
+      border-width: 0 0 2px 0;
+      border-style: solid;
+      border-color: #40973d;
+      border-radius: 2px !important;
+      background: #b7edce;
+      background-clip: padding-box !important;
+      &:hover {
+        color: #fff;
+      }
+    }
+    h2 {
+      font-size: 1.3em;
+      font-weight: normal;
+      line-height: 30px;
+
+      width: 30px;
+      height: 30px;
+      margin: 0 auto;
+
+      text-align: center;
+
+      color: #7a7880;
+      border: 2px solid #7a7880;
+      border-radius: 50%;
+    }
+  }
+}
+
+#bp-questionnaire {
+  ul {
+    height: 260px !important;
+    padding: 0;
+    padding: 15px;
+
+    list-style-type: none;
+
+    border: 0 !important;
+    background: #f6f5f7;
+    li {
+      margin-bottom: 8px;
+    }
+  }
+  input[type=submit] {
+    display: inline-block;
+
+    margin: 5px 0;
+    padding: 8px 20px;
+
+    white-space: nowrap;
+    text-decoration: none;
+
+    color: #fff;
+    border-width: 0 0 2px 0;
+    border-style: solid;
+    border-color: #25a85c;
+    border-radius: 2px !important;
+    background: #2ecc71;
+    background-clip: padding-box !important;
+    text-shadow: 1px 1px 1px #414044;
+    &:hover {
+      color: #fff;
+    }
+  }
+}
+
+.top_vpn_head {
+  height: 334px;
+
+  background: #f53e45 url('https://www.bestvpn.com/wp-content/themes/bestvpn/css/../img/top_bg.jpg') top right no-repeat;
+  h1 {
+    font-size: 2.6em !important;
+    font-weight: lighter !important;
+
+    margin: 0 !important;
+    padding: 50px 0 0 40px !important;
+
+    color: #fff !important;
+  }
+  p {
+    font-size: .8em !important;
+
+    margin: 0 !important;
+    padding: 20px 0 0 40px !important;
+
+    color: #fff !important;
+  }
+}
+
+.review_head {
+  .iconpic {
+    float: left;
+
+    vertical-align: bottom;
+  }
+  h1 {
+    font-size: 1.3em !important;
+
+    float: left;
+
+    margin: 6px 0 0 15px !important;
+    padding: 0 !important;
+  }
+  .logopic {
+    width: auto;
+    height: 41px;
+
+    vertical-align: bottom;
+
+    border: 0;
+  }
+  a.logolink {
+    display: block;
+    float: right;
+  }
+  .screenshot_wrapper {
+    height: 211px;
+
+    text-align: center;
+
+    background-repeat: no-repeat;
+    background-position: top left;
+    .sitelink {
+      font-size: 1.3em;
+
+      position: relative;
+      top: 70px;
+
+      display: inline-block;
+
+      margin: 5px 0;
+      margin: 0 auto;
+      padding: 8px 20px;
+      padding: 10px 35px;
+
+      text-align: center;
+      white-space: nowrap;
+      text-decoration: none;
+
+      color: #fff;
+      border-width: 0 0 2px 0;
+      border-style: solid;
+      border-color: #d51c27;
+      border-radius: 2px !important;
+      background: #f64046;
+      background-clip: padding-box !important;
+      text-shadow: 1px 1px 1px #414044;
+      &:hover {
+        color: #fff;
+      }
+    }
+    ul.ratings {
+      margin: 108px 19px 0 20px;
+      li {
+        display: block !important;
+        float: left;
+
+        width: 19.7%;
+        margin-right: 1px;
+
+        background-color: #fff;
+        background-repeat: no-repeat;
+        background-position: 10px 15px;
+        label {
+          font-size: .9em;
+          line-height: 1em;
+
+          display: block;
+
+          height: 31px;
+          padding-top: 21px;
+          padding-left: 30px;
+
+          text-align: left;
+          white-space: normal;
+          text-transform: uppercase;
+
+          color: #414044;
+        }
+        &:nth-child(2) {
+          background-image: url('https://www.bestvpn.com/wp-content/themes/bestvpn/css/../img/icon_features.png');
+        }
+        &:nth-child(3) {
+          background-image: url('https://www.bestvpn.com/wp-content/themes/bestvpn/css/../img/icon_reliability.png');
+        }
+        &:nth-child(4) {
+          background-image: url('https://www.bestvpn.com/wp-content/themes/bestvpn/css/../img/icon_speed.png');
+        }
+        &:nth-child(5) {
+          background-image: url('https://www.bestvpn.com/wp-content/themes/bestvpn/css/../img/icon_customer.png');
+          label {
+            height: 40px;
+            padding-top: 12px;
+          }
+        }
+        span {
+          display: block;
+
+          padding: 15px 0;
+
+          background: #f6f5f7;
+          img {
+            margin: 2px;
+          }
+        }
+      }
+    }
+  }
+}
+
+.review_wrapper {
+  margin: 35px 20px 0 20px;
+  ul.page_tabs {
+    margin: 0;
+    padding: 0;
+
+    list-style-type: none;
+    li {
+      font-size: .9em;
+
+      display: block;
+      float: left;
+
+      width: 175px;
+      margin: 0 1px 0 0;
+      padding: 10px 4px;
+
+      cursor: pointer;
+      text-align: center;
+      text-transform: uppercase;
+
+      background-color: #f6f5f7;
+      &.active {
+        cursor: default;
+
+        color: #fff;
+        background: linear-gradient(linear, left top, right top, from(#db212c), to(#2f2727));
+        background-color: #db212c;
+      }
+    }
+  }
+  .review_content_wrapper {
+    border-top: 1px solid #db212c;
+    .tab {
+      font-size: 1em;
+      line-height: 170%;
+      &.user {
+        margin: 0;
+        padding: 15px;
+      }
+      &.post {
+        padding: 20px;
+        .comment-form-comment,
+        .logged-in-as {
+          font-size: .9em;
+        }
+        .form-allowed-tags {
+          display: none;
+        }
+        .comment-form-comment label {
+          padding: 0 !important;
+        }
+      }
+      &.comment_wrapper {
+        font-size: 1em;
+
+        margin: 0 !important;
+      }
+    }
+  }
+}
+
+.single_sidebar .bp-features-box {
+  margin: 0 15px;
+  padding: 18px 0;
+
+  border-bottom: 1px solid #ededed;
+  &.last {
+    border-bottom: none;
+  }
+  h3 {
+    min-height: 27px;
+    margin: 0;
+    padding: 2px 0 0 40px;
+
+    background-repeat: no-repeat;
+    background-position: top left;
+    &.icon1 {
+      background-image: url('https://www.bestvpn.com/wp-content/themes/bestvpn/css/../img/icon1.png');
+    }
+    &.icon2 {
+      background-image: url('https://www.bestvpn.com/wp-content/themes/bestvpn/css/../img/icon2.png');
+    }
+    &.icon3 {
+      background-image: url('https://www.bestvpn.com/wp-content/themes/bestvpn/css/../img/icon3.png');
+    }
+    &.icon4 {
+      background-image: url('https://www.bestvpn.com/wp-content/themes/bestvpn/css/../img/icon4.png');
+    }
+    &.icon5 {
+      background-image: url('https://www.bestvpn.com/wp-content/themes/bestvpn/css/../img/icon5.png');
+    }
+    &.icon6 {
+      background-image: url('https://www.bestvpn.com/wp-content/themes/bestvpn/css/../img/icon6.png');
+    }
+  }
+  ul {
+    margin: 15px 0 0 28px;
+    padding: 0;
+
+    list-style-image: url('https://www.bestvpn.com/wp-content/themes/bestvpn/css/../img/tick.png');
+    li {
+      font-size: .9em;
+
+      margin-bottom: 6px;
+    }
+  }
+}
+
+.vpn_wrapper {
+  .vpn_head {
+    margin: 0 0 20px 20px;
+    padding: 8px 8px 8px 55px;
+
+    background: #fff url('https://www.bestvpn.com/wp-content/themes/bestvpn/css/../img/review_icon.png') top left no-repeat;
+    h1 {
+      font-size: 1.3em;
+      font-weight: normal;
+
+      margin: 0;
+      padding: 0;
+
+      color: #7a7880;
+    }
+    p {
+      font-size: .8em;
+    }
+  }
+  .vpn_loop_wrapper {
+    margin: 0 -10px 0 10px;
+    padding-bottom: 70px;
+    .vpn {
+      margin: 0;
+      padding: 0;
+      .vpn_pre {
+        margin: 0 10px 21px 10px;
+        padding: 0;
+
+        cursor: pointer;
+
+        background: #fff;
+        .screenpic {
+          width: 100%;
+          height: auto;
+        }
+        .vpn_content {
+          margin: 8px 8px 0 8px;
+          padding: 0 0 20px 0;
+          .logo {
+            float: left;
+
+            width: 40%;
+            img {
+              width: 100%;
+            }
+          }
+          .vpn_info {
+            font-size: .9em;
+
+            float: right;
+
+            width: 95%;
+            h2 {
+              font-size: 1.2em;
+              font-weight: normal;
+
+              margin: 0;
+              padding: 0;
+
+              color: #414044;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.summary {
+  padding: 10px;
+
+  background: url('https://www.bestvpn.com/wp-content/themes/bestvpn/css/../../../../wp-content/uploads/2012/09/striped_lens.png');
+  strong {
+    position: relative;
+    top: -10px;
+    left: 10px;
+  }
+}
+
+.editorChoice {
+  font-weight: bold;
+
+  float: right;
+
+  width: 200px;
+  height: 30px;
+  padding-top: 10px;
+
+  text-align: center;
+  text-transform: uppercase;
+
+  color: #fff;
+  border-bottom-right-radius: 2px 2px;
+  border-bottom-left-radius: 2px 2px;
+  background: #e2a342;
+}
+
+.editorChoiceButton {
+  font-size: 14pt;
+
+  text-align: center;
+
+  color: #e2a342;
+  a {
+    text-decoration: none;
+
+    color: #e2a342;
+  }
+}
+
+.post_content a img {
+  margin-top: 5px;
+  padding: 7px;
+
+  background: url('https://www.bestvpn.com/wp-content/themes/bestvpn/css/../../../../wp-content/uploads/2013/09/border-bg.png');
+}
+
+#the_process {
+  padding: 10px;
+
+  background: url('https://www.bestvpn.com/wp-content/themes/bestvpn/css/../../../../wp-content/uploads/2012/09/striped_lens.png');
+  a img {
+    max-width: 600px !important;
+    height: auto;
+  }
+}
+
+img {
+  max-width: 600px !important;
+  height: auto;
+}
+
+@media only screen and (min-width: 768px) {
+  .vpn_loop_wrapper .vpn {
+    float: left;
+
+    width: 50%;
+  }
+}
+
+@media only screen and (min-width: 1140px) {
+  .vpn_loop_wrapper .vpn {
+    width: 33.3%;
+  }
+}
+
+@font-face {
+  font-family: 'Ubuntu';
+  font-weight: 400;
+  font-style: normal;
+
+  src: local('Ubuntu'), url(https://themes.googleusercontent.com/static/fonts/ubuntu/v5/vRvZYZlUaogOuHbBTT1SNevvDin1pK8aKteLpeZ5c0A.woff) format('woff');
+}
+
+
+@font-face {
+  font-family: 'Ubuntu';
+  font-weight: 700;
+  font-style: normal;
+
+  src: local('Ubuntu Bold'), local('Ubuntu-Bold'), url(https://themes.googleusercontent.com/static/fonts/ubuntu/v5/0ihfXUL2emPh0ROJezvraLO3LdcAZYWl9Si6vvxL-qU.woff) format('woff');
+}
+
+
+.post_content {
+  font-size: 100% !important;
+  line-height: 160%;
+
+  color: #444;
+}
+
+.single_wrapper .single_content_wrapper {
+  .single_content {
+    background: #fff;
+    .image {
+      position: relative;
+
+      display: none;
+      float: right;
+
+      border-width: 0 0 8px 0;
+      border-style: solid;
+      border-color: #fff;
+      border-right: 0;
+      img {
+        border: 0;
+      }
+      .cover {
+        width: 100%;
+      }
+      .imgcover {
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+    }
+    h1 {
+      font-size: 1.5em;
+      font-weight: bold;
+
+      margin: 0 20px 10px 20px;
+      padding: 20px 0 0 0;
+      a {
+        text-decoration: none;
+
+        color: #000;
+        &:hover {
+          color: #7a7880;
+        }
+      }
+    }
+    .info {
+      font-size: .8em;
+
+      margin: 0 20px;
+      padding: 2px 0 3px 0;
+
+      color: #7a7880;
+      border: 1px solid #ededed;
+      border-width: 1px 0;
+      a {
+        text-decoration: none;
+
+        color: #7a7880;
+        &:hover {
+          color: #000;
+        }
+      }
+    }
+    .post_content {
+      font-size: .8em;
+
+      min-width: 620px;
+      padding: 10px 10px 20px 10px;
+      p {
+        margin: 10px 0 15px 0;
+      }
+    }
+  }
+  .single_share_wrapper {
+    display: table;
+
+    width: 100%;
+    margin: 35px 0 0 0;
+
+    background: #7a7880;
+    .single_share {
+      display: table-row;
+      .tags {
+        display: table-cell;
+
+        padding-left: 8px;
+
+        vertical-align: middle;
+        a {
+          font-size: .8em;
+
+          margin-left: 4px;
+          padding: 2px 8px;
+
+          white-space: nowrap;
+          text-decoration: none;
+
+          color: #000;
+          border-radius: 4px !important;
+          background: #9f9da3;
+          background-clip: padding-box !important;
+          &:hover {
+            background: #eeedea;
+          }
+        }
+      }
+      .share_text {
+        font-size: .9em;
+
+        display: table-cell;
+
+        padding-right: 15px;
+
+        text-align: right;
+        vertical-align: middle;
+        white-space: nowrap;
+        text-transform: uppercase;
+
+        color: #fff;
+      }
+      .share_icons {
+        display: table-cell;
+
+        width: 164px;
+        a {
+          float: right;
+          img {
+            width: 41px;
+            height: 41px;
+
+            vertical-align: bottom;
+
+            border: 0;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 480px) {
+  .single_wrapper .single_content_wrapper .single_content .image {
+    width: 45%;
+
+    border-width: 0 20px 20px 0;
+  }
+}
+
+.comment_wrapper {
+  margin: 0;
+  padding: 0 0 35px 0;
+
+  background: #f6f5f7;
+  h3 #comments {
+    padding: 10px 30px;
+
+    background-color: #7a7880;
+  }
+  .commentlist {
+    font-size: 80%;
+
+    list-style-type: none;
+  }
+  .children {
+    list-style-type: none;
+  }
+  .avatar {
+    padding: 5px;
+
+    background-color: #fff;
+  }
+  div .reply {
+    float: right;
+
+    margin-top: -29px;
+    padding: 5px 20px;
+
+    color: #fff;
+    background: linear-gradient(linear, left top, right top, from(#df323d), to(#2f2727));
+    background-color: #df323d;
+    a {
+      text-decoration: none;
+
+      color: #fff;
+    }
+  }
+  .url {
+    font-weight: bold;
+    font-style: normal;
+
+    padding-left: 3px;
+
+    text-decoration: none;
+
+    color: #000;
+    &:hover {
+      font-style: italic;
+
+      color: #000;
+    }
+  }
+  .comment-meta {
+    padding: 5px;
+
+    text-align: right;
+
+    background-color: #ededed;
+    a {
+      font-style: normal;
+
+      text-decoration: none;
+
+      color: #68676a;
+    }
+  }
+  .comment-body p {
+    margin: 0;
+    padding: 15px 15px 40px 15px;
+
+    background-color: #fff;
+  }
+  .comment-awaiting-moderation {
+    text-align: right;
+  }
+  #respond h3 {
+    font-size: 1.2em;
+    font-weight: normal;
+
+    margin: 20px 0;
+
+    color: #ee373f;
+  }
+  #commentform {
+    label {
+      padding-left: 15px;
+    }
+    input[type=text],
+    textarea {
+      font-size: .9em;
+
+      width: 100%;
+      padding: 4px;
+
+      border: 0;
+    }
+    #submit {
+      font-size: .8em;
+
+      padding: 10px 30px;
+
+      text-transform: uppercase;
+
+      color: #fff;
+      border: 0;
+      background: linear-gradient(linear, left top, right top, from(#df323d), to(#2f2727));
+      background-color: #df323d;
+    }
+  }
+}
+
+.single_wrapper {
+  .single_content_wrapper {
+    .single_content,
+    .single_share_wrapper {
+      margin: 0;
+      padding: 0;
+    }
+  }
+  .single_sidebar_wrapper {
+    width: 300px;
+    .single_sidebar {
+      margin: 0;
+      padding: 0;
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .single_wrapper {
+    .single_content_wrapper {
+      .single_content {
+        margin: 0 0 0 20px;
+        .single_share_wrapper {
+          margin-top: 55px;
+        }
+      }
+      .comment_wrapper {
+        margin: 0 0 0 20px;
+        #commentform input[type=text] {
+          width: 340px;
+        }
+      }
+    }
+    .single_sidebar_wrapper .single_sidebar {
+      margin: 0 0 0 20px;
+    }
+  }
+}
+
+@media only screen and (min-width: 1140px) {
+  .single_wrapper {
+    display: table;
+
+    width: 100%;
+    .single_content_wrapper {
+      display: table-cell;
+
+      vertical-align: top;
+      .single_content,
+      .comment_wrapper {
+        margin: 0 0 0 40px;
+      }
+    }
+    .single_sidebar_wrapper {
+      display: table-cell;
+
+      vertical-align: top;
+      .single_sidebar {
+        margin: 0 0 0 40px;
+        padding: 0;
+      }
+    }
+  }
+}
+
+body {
+  font-family: 'Source Sans Pro',sans-serif,Helvetica;
+  font-size: 110%;
+
+  background: #f6f5f7;
+}
+
+.clear {
+  clear: both;
+}
+
+a {
+  color: #000;
+  &:hover {
+    color: #414044;
+  }
+}
+
+#simplemodal-overlay {
+  background-color: #000;
+}
+
+#simplemodal-container {
+  padding: 25px 40px;
+
+  border: 1px solid #f6f5f7;
+  background-color: #fff;
+}
+
+#vpn_popup {
+  padding: 20px;
+
+  text-align: center;
+
+  background-color: #fff;
+  #vpn_popup_name {
+    font-size: 1.4em;
+
+    margin: 15px 0 8px 0;
+  }
+  #vpn_popup_price {
+    font-size: .9em;
+    font-weight: bold;
+
+    margin-bottom: 15px;
+
+    color: #ee373f;
+    #vpn_popup_price_format {
+      font-weight: normal;
+
+      color: #000;
+    }
+  }
+  #vpn_popup_post,
+  #vpn_popup_link {
+    margin: 8px;
+    padding: 4px 20px;
+  }
+}
+
+.container {
+  .vpn_bar {
+    background: #222127;
+    .logo {
+      text-align: center;
+    }
+    .menu {
+      h2 {
+        font-size: .9em;
+        font-weight: normal;
+
+        text-transform: uppercase;
+
+        color: #eeedea;
+        &.device {
+          background: url('https://www.bestvpn.com/wp-content/themes/bestvpn/css/../img/category_device.png') 0 1px no-repeat;
+        }
+        &.country {
+          background: url('https://www.bestvpn.com/wp-content/themes/bestvpn/css/../img/category_country.png') 0 1px no-repeat;
+        }
+        &.features {
+          background: url('https://www.bestvpn.com/wp-content/themes/bestvpn/css/../img/category_features.png') 0 1px no-repeat;
+        }
+      }
+      ul {
+        margin: 0;
+        padding: 0;
+
+        list-style-type: none;
+        li {
+          font-size: .7em;
+          a {
+            text-decoration: none;
+
+            color: #7a7880;
+            &:hover {
+              color: #eeedea;
+            }
+          }
+        }
+      }
+      .social {
+        margin: 25px 0 0 0;
+        a {
+          padding: 0 15px 0 0;
+        }
+      }
+    }
+  }
+  .wrapper .top_menu {
+    background: #48474d;
+    .main_menu ul {
+      margin: 0;
+      padding: 0;
+
+      list-style-type: none;
+      li {
+        font-size: .9em;
+        a {
+          font-size: .9em;
+
+          text-decoration: none;
+          text-transform: uppercase;
+
+          color: #7a7880;
+        }
+        &:hover,
+        &.current_page_item {
+          background: #f64046;
+          a {
+            color: #f6f5f7;
+          }
+        }
+      }
+    }
+    .social_menu {
+      background: #414044;
+      li {
+        &:hover {
+          background: #48474d;
+        }
+        &.red {
+          background: #e72f38;
+          a {
+            font-size: .9em;
+
+            text-decoration: none;
+            text-transform: uppercase;
+
+            color: #f6f5f7;
+            &:hover {
+              color: #fff;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+.footer {
+  background: #48474d;
+  .copytext {
+    div {
+      font-size: .8em;
+
+      color: #7a7880;
+    }
+    a {
+      color: #9f9da3;
+    }
+  }
+}
+
+.fb-like-box {
+  background: #fff;
+}
+
+.author_bottom {
+  width: 90%;
+  margin-top: 10px;
+  margin-left: 40px;
+  padding: 10px;
+  span {
+    position: relative;
+    top: -14px;
+  }
+}
+
+.loop_wrapper {
+  margin: 0 -10px 0 20px;
+  padding-bottom: 70px;
+  .post {
+    margin: 0;
+    padding: 0;
+    .post_pre {
+      margin: 0 10px 21px 10px;
+      padding: 0;
+
+      background: #fff;
+      .image {
+        position: relative;
+        img {
+          border: 0;
+        }
+        .cover {
+          width: 100%;
+        }
+        .imgcover {
+          position: absolute;
+          top: 0;
+          left: 0;
+        }
+      }
+      h2 {
+        font-size: 1.2em;
+        font-weight: normal;
+
+        margin: 0 20px;
+        padding: 15px 0 8px 0;
+        a {
+          text-decoration: none;
+
+          color: #000;
+          &:hover {
+            color: #7a7880;
+          }
+        }
+      }
+      .info {
+        font-size: .8em;
+
+        margin: 0 20px;
+        padding: 2px 0 3px 0;
+
+        color: #7a7880;
+        border: 1px solid #ededed;
+        border-width: 1px 0;
+        a {
+          text-decoration: none;
+
+          color: #7a7880;
+          &:hover {
+            color: #000;
+          }
+        }
+      }
+      .post_content {
+        font-size: .8em;
+
+        margin: 8px 20px 0 20px;
+        padding: 0 0 20px 0;
+        a.more-link {
+          display: block;
+
+          margin-top: 20px;
+
+          color: #ee373f;
+          &:hover {
+            color: #771c20;
+          }
+        }
+      }
+    }
+  }
+  .navigation {
+    position: absolute;
+
+    width: 100%;
+    .prev-post,
+    .next-post {
+      display: inline-block;
+
+      margin: 5px 0;
+      margin: 0 2%;
+      padding: 8px 20px;
+
+      white-space: nowrap;
+      text-decoration: none;
+
+      color: #fff;
+      border-width: 0 0 2px 0;
+      border-style: solid;
+      border-color: #d51c27;
+      border-radius: 2px !important;
+      background: #f64046;
+      background-clip: padding-box !important;
+      text-shadow: 1px 1px 1px #414044;
+    }
+    .prev-post:hover,
+    .next-post:hover {
+      color: #fff;
+    }
+    .prev-post {
+      float: left;
+    }
+    .next-post {
+      float: right;
+    }
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .loop_wrapper .post {
+    float: left;
+
+    width: 50%;
+  }
+}
+
+@media only screen and (min-width: 1140px) {
+  .loop_wrapper .post {
+    width: 33.3%;
+  }
+}
+
+.home_wrapper {
+  margin: 0 8px;
+
+  background: #fff;
+  .row {
+    .wide_col,
+    .narrow_col {
+      margin-bottom: 20px;
+    }
+    .preimg {
+      width: 100%;
+      height: auto;
+
+      vertical-align: bottom;
+    }
+    .lead {
+      margin: 15px 15px 0 15px;
+      .posticon {
+        float: left;
+
+        width: 38px;
+        height: 38px;
+        margin: 0 10px 0 0;
+      }
+      h4 {
+        font-size: 1em;
+        font-weight: normal;
+
+        margin: 0 0 4px 0;
+        padding: 0;
+        a {
+          text-decoration: none;
+
+          color: #000;
+          &:hover {
+            color: #7a7880;
+          }
+        }
+      }
+      .first_info {
+        font-size: .8em;
+
+        margin-top: 4px;
+
+        color: #7a7880;
+        a {
+          text-decoration: none;
+
+          color: #7a7880;
+          &:hover {
+            color: #000;
+          }
+        }
+      }
+      p {
+        font-size: .8em;
+      }
+    }
+  }
+}
+
+.email_wrapper {
+  margin: 20px 8px;
+  .email_bar {
+    font-size: .9em;
+
+    width: 100%;
+    input {
+      width: 100%;
+      padding: 4px 0;
+
+      color: #fff;
+      border: 0;
+      background: transparent;
+    }
+    .text {
+      overflow: hidden;
+
+      height: 41px;
+      padding: 0 0 0 50px;
+
+      color: #fff;
+      background: #7a7880 url('https://www.bestvpn.com/wp-content/themes/bestvpn/css/../img/email.png') top left no-repeat;
+    }
+    .input {
+      padding: 4px 20px;
+
+      background: #8a8890;
+    }
+    .signup {
+      padding: 4px 8px;
+
+      text-align: center;
+
+      background: linear-gradient(linear, left top, right top, from(#dd242e), to(#2f2727));
+      background-color: #dd242e;
+    }
+  }
+}
+
+.single_wrapper .single_content_wrapper .single_content.second {
+  h4 {
+    font-size: 1em;
+    font-weight: normal;
+
+    margin: 0 0 4px 0;
+    padding: 0;
+    a {
+      text-decoration: none;
+
+      color: #000;
+      &:hover {
+        color: #7a7880;
+      }
+    }
+  }
+  .first_info {
+    font-size: .8em;
+
+    margin-top: 4px;
+
+    color: #7a7880;
+    a {
+      text-decoration: none;
+
+      color: #7a7880;
+      &:hover {
+        color: #000;
+      }
+    }
+  }
+  .side_post {
+    margin: 0;
+    padding: 13px 8px 13px 8px;
+
+    border-bottom: 1px solid #ededed;
+    &.last {
+      border-bottom: 0;
+    }
+    &.active {
+      color: #fff;
+      background: linear-gradient(linear, left top, right top, from(#dd242e), to(#2f2727));
+      background-color: #dd242e;
+      a {
+        color: #fff;
+        &:hover {
+          color: #000;
+        }
+      }
+      .text {
+        a {
+          color: #fff;
+          &:hover {
+            color: #000;
+          }
+        }
+        .info {
+          color: #f6f5f7;
+          a {
+            color: #f6f5f7;
+          }
+        }
+      }
+    }
+    img {
+      float: left;
+
+      width: 50px;
+      height: 50px;
+      margin: 4px 16px 2px 0;
+    }
+    .text {
+      font-size: .8em;
+      a {
+        text-decoration: none;
+
+        color: #000;
+        &:hover {
+          color: #7a7880;
+        }
+      }
+      .info {
+        font-size: .9em;
+
+        margin: 4px 0 0 0;
+
+        color: #7a7880;
+        border: 0;
+        a {
+          text-decoration: none;
+
+          color: #7a7880;
+          &:hover {
+            color: #000;
+          }
+        }
+      }
+    }
+  }
+  .carousel_wrapper {
+    display: table;
+
+    width: 100%;
+    .carousel_row {
+      display: table-row;
+      .carousel_articles {
+        display: table-cell;
+
+        width: 50%;
+
+        vertical-align: top;
+      }
+      .carousel_preview {
+        display: table-cell;
+
+        width: 50%;
+
+        vertical-align: top;
+        .prepic_wrapper {
+          position: relative;
+          .rectangle {
+            line-height: 0;
+
+            position: absolute;
+
+            width: 0;
+            height: 0;
+
+            border-width: 42px 0 42px 17px;
+            border-style: solid;
+            border-color: transparent transparent transparent #fc474c;
+
+            _border-color: #000 #000 #000 #fc474c;
+          }
+          img.prepic {
+            width: 100%;
+          }
+        }
+        .pw {
+          padding: 15px 15px 4px 15px;
+          img {
+            float: left;
+
+            width: 38px;
+            height: 38px;
+            margin: 0 10px 0 0;
+          }
+          p {
+            font-size: .8em;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (min-width: 480px) {
+  .home_wrapper {
+    margin: 0 20px;
+  }
+  .email_wrapper {
+    margin: 20px;
+  }
+}
+
+@media only screen and (min-width: 1140px) {
+  .home_wrapper {
+    display: table;
+
+    margin: 0 40px;
+    .row {
+      display: table-row;
+      .wide_col {
+        display: table-cell;
+
+        width: 46%;
+        margin-bottom: 0;
+
+        vertical-align: top;
+      }
+      .narrow_col {
+        display: table-cell;
+
+        width: 27%;
+        margin-bottom: 0;
+
+        vertical-align: top;
+        &.mid {
+          vertical-align: bottom !important;
+        }
+      }
+    }
+  }
+  .email_wrapper {
+    margin: 24px 40px;
+    .email_bar {
+      display: table;
+      .text,
+      .input,
+      .signup {
+        display: table-cell;
+
+        vertical-align: middle;
+      }
+    }
+  }
+}
+
+.editorChoiceImage {
+  padding-top: 23px !important;
+
+  background: url('https://www.bestvpn.com/wp-content/themes/bestvpn/css/../../../../wp-content/uploads/2015/04/editorchoice.png') top center no-repeat;
+}
+
+.guide-part img {
+  background: none !important;
+}
+
+@font-face {
+  font-family: 'Source Sans Pro';
+  font-weight: 400;
+  font-style: normal;
+
+  src: local('Source Sans Pro'), local('SourceSansPro-Regular'), url(https://themes.googleusercontent.com/static/fonts/sourcesanspro/v7/ODelI1aHBYDBqgeIAH2zlNHq-FFgoDNV3GTKpHwuvtI.woff) format('woff');
+}
+
+
+table.summary_table td:not(.toprow):nth-child(5) a {
+  &:hover {
+    color: #fff;
+    border-color: #222;
+    background-color: #8ae587;
+  }
+  &:active {
+    border-width: 2px 0 0;
+    border-color: #222;
+    background-color: #8ae587;
+  }
+}
+
+a.btn.green-button {
+  &:hover {
+    color: #fff;
+    border-color: #3f8f28;
+    background-color: #8ae587;
+  }
+  &:active {
+    border-width: 2px 0 0;
+    border-color: #3f8f28;
+    background-color: #5bd057;
+  }
+}
+
+.ulp-overlay {
+  position: fixed;
+  z-index: 1000000;
+  top: 0;
+  left: 0;
+
+  display: none;
+
+  width: 100%;
+  height: 100%;
+}
+
+.ulp-window {
+  font-family: arial,verdana;
+  font-size: 14px;
+
+  position: fixed;
+  z-index: 1000001;
+
+  display: none;
+
+  text-align: left;
+}
+
+.ulp-inline-window {
+  font-family: arial,verdana;
+  font-size: 14px;
+
+  display: none;
+
+  margin: 0 auto;
+
+  text-align: left;
+}
+
+.ulp-content {
+  position: relative;
+}
+
+.ulp-layer {
+  line-height: 1.475;
+
+  position: absolute;
+
+  box-sizing: border-box;
+
+  text-align: justify;
+  img {
+    min-width: 0 !important;
+    max-width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+
+    border: none !important;
+    box-shadow: none !important;
+  }
+}
+
+.ulp-input {
+  font-size: inherit !important;
+  line-height: 1.5 !important;
+
+  clear: both !important;
+
+  box-sizing: border-box !important;
+  width: 100% !important;
+  min-width: 0 !important;
+  max-width: 100% !important;
+  height: 100% !important;
+  margin: 0 !important;
+  margin: 0 !important;
+  padding: 0 6px !important;
+
+  border-spacing: 0 !important;
+
+  vertical-align: middle !important;
+
+  border-width: 1px !important;
+  border-style: solid !important;
+  border-color: #888;
+  border-radius: 2px !important;
+  background: #fff;
+  background: rgba(255, 255, 255, .8);
+  background-image: none;
+  box-shadow: none !important;
+}
+
+.ulp-input-error {
+  border-color: red !important;
+  background-image: url('https://www.bestvpn.com/wp-content/plugins/layered-popups/css/../images/error.png');
+  background-repeat: no-repeat;
+  background-position: 100% 50%;
+}
+
+.ulp-submit,
+.ulp-submit-button {
+  font-size: inherit !important;
+  line-height: 1.5;
+
+  position: relative;
+
+  display: inline-block;
+
+  width: auto;
+  height: auto;
+  margin: 0;
+  padding: 5px 20px;
+
+  cursor: pointer;
+  transition-duration: .3s;
+  white-space: nowrap;
+  text-decoration: none !important;
+
+  border: 1px solid #019ad2;
+  border-radius: 2px;
+  background-color: #019ad2;
+  background-image: linear-gradient(#33bcef, #019ad2);
+  background-image: linear-gradient(#33bcef, #019ad2);
+  background-repeat: repeat-x;
+  box-shadow: none;
+  text-shadow: 0 -1px 1px rgba(0, 0, 0, .25);
+  &:visited {
+    font-size: inherit !important;
+    line-height: 1.5;
+
+    position: relative;
+
+    display: inline-block;
+
+    width: auto;
+    height: auto;
+    margin: 0;
+    padding: 5px 20px;
+
+    cursor: pointer;
+    transition-duration: .3s;
+    white-space: nowrap;
+    text-decoration: none !important;
+
+    border: 1px solid #019ad2;
+    border-radius: 2px;
+    background-color: #019ad2;
+    background-image: linear-gradient(#33bcef, #019ad2);
+    background-image: linear-gradient(#33bcef, #019ad2);
+    background-repeat: repeat-x;
+    box-shadow: none;
+    text-shadow: 0 -1px 1px rgba(0, 0, 0, .25);
+  }
+}
+
+.ulp-content a {
+  text-decoration: none !important;
+}
+
+.ulp-submit {
+  &:hover,
+  &:active {
+    border: 1px solid #019ad2;
+    background-color: #0271bf;
+    background-image: linear-gradient(#2daddc, #0271bf);
+    background-image: linear-gradient(#2daddc, #0271bf);
+    background-repeat: repeat-x;
+    box-shadow: none;
+  }
+}
+
+.ulp-submit-button {
+  &:hover,
+  &:active {
+    border: 1px solid #019ad2;
+    background-color: #0271bf;
+    background-image: linear-gradient(#2daddc, #0271bf);
+    background-image: linear-gradient(#2daddc, #0271bf);
+    background-repeat: repeat-x;
+    box-shadow: none;
+  }
+}
+
+.ulp-buynow-blue {
+  display: inline-block;
+
+  width: auto;
+  height: auto;
+  margin: 0;
+  padding: 5px 20px;
+
+  transition-duration: .3s;
+  white-space: nowrap;
+
+  border: 1px solid #019ad2;
+  border-radius: 5px;
+  background-color: #019ad2;
+  background-image: linear-gradient(#33bcef, #019ad2);
+  background-repeat: repeat-x;
+  box-shadow: none;
+  &:visited {
+    display: inline-block;
+
+    width: auto;
+    height: auto;
+    margin: 0;
+    padding: 5px 20px;
+
+    transition-duration: .3s;
+    white-space: nowrap;
+
+    border: 1px solid #019ad2;
+    border-radius: 5px;
+    background-color: #019ad2;
+    background-image: linear-gradient(#33bcef, #019ad2);
+    background-repeat: repeat-x;
+    box-shadow: none;
+  }
+  &:hover,
+  &:active {
+    background-color: #0271bf;
+    background-image: linear-gradient(#2daddc, #0271bf);
+    background-repeat: repeat-x;
+    box-shadow: none;
+  }
+}
+
+.ulp-fa-input-table {
+  line-height: 100%;
+
+  position: absolute;
+  top: 0;
+  left: 0;
+
+  display: table;
+
+  height: 100%;
+
+  vertical-align: middle;
+}
+
+.ulp-fa-input-cell {
+  display: table-cell;
+
+  text-align: center;
+  vertical-align: middle;
+
+  opacity: .7;
+}
+
+.ulp-social-button {
+  display: inline-block;
+  overflow: hidden;
+
+  vertical-align: top;
+}
+
+.ulp-social-button-google-plusone {
+  padding-top: 2px;
+}
+
+.ulp-social-button-facebook-like {
+  padding-top: 1px;
+}
+
+.ulp-loader {
+  position: fixed;
+  z-index: 1000001;
+
+  width: 60px;
+  height: 60px;
+
+  opacity: .5;
+  border-radius: 100px;
+  background: #fff url('https://www.bestvpn.com/wp-content/plugins/layered-popups/css/../images/spinner.gif') center center no-repeat;
+  box-shadow: 0 0 8px rgba(0, 0, 0, .5);
+}
+
+.ulp-loader-top-left {
+  top: 50px;
+  left: 50px;
+}
+
+.ulp-loader-top-center {
+  top: 50px;
+  left: 50%;
+
+  margin: 0 0 0 -30px;
+}
+
+.ulp-loader-top-right {
+  top: 50px;
+  right: 50px;
+}
+
+.ulp-loader-middle-left {
+  top: 50%;
+  left: 50px;
+
+  margin: -30px 0 0 0;
+}
+
+.ulp-loader-middle-center {
+  top: 50%;
+  left: 50%;
+
+  margin: -30px 0 0 -30px;
+}
+
+.ulp-loader-middle-right {
+  top: 50%;
+  right: 50px;
+
+  margin: -30px 0 0 0;
+}
+
+.ulp-loader-bottom-left {
+  bottom: 50px;
+  left: 50px;
+}
+
+.ulp-loader-bottom-center {
+  bottom: 50px;
+  left: 50%;
+
+  margin: 0 0 0 -30px;
+}
+
+.ulp-loader-bottom-right {
+  right: 50px;
+  bottom: 50px;
+}
+
+.ulp-inherited {
+  display: block !important;
+
+  box-sizing: border-box !important;
+  height: 100% !important;
+  &:before {
+    display: inline-block;
+
+    height: 100%;
+    padding-top: 3px;
+
+    content: '';
+    vertical-align: middle;
+  }
+}
+
+.ulp-link-button {
+  display: block !important;
+
+  box-sizing: border-box !important;
+  height: 100% !important;
+
+  transition-duration: .5s !important;
+  text-decoration: none !important;
+
+  border-radius: 5px !important;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, .3), inset 0 0 3px rgba(255, 255, 255, .5), 0 1px 1px rgba(0, 0, 0, .3) !important;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, .2) !important;
+  &:hover,
+  &:active,
+  &:focus,
+  &:visited {
+    display: block !important;
+
+    box-sizing: border-box !important;
+    height: 100% !important;
+
+    transition-duration: .5s !important;
+    text-decoration: none !important;
+
+    border-radius: 5px !important;
+    box-shadow: inset 0 1px 0 rgba(255, 255, 255, .3), inset 0 0 3px rgba(255, 255, 255, .5), 0 1px 1px rgba(0, 0, 0, .3) !important;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, .2) !important;
+  }
+  &:before {
+    display: inline-block;
+
+    height: 100%;
+    padding-top: 3px;
+
+    content: '';
+    vertical-align: middle;
+  }
+}
+
+.ulp-link-button-red {
+  border: 1px solid #b20000;
+  background-color: rgb(255, 48, 25);
+  background-image: linear-gradient(to bottom, rgba(255, 48, 25, 1) 0%, rgba(207, 4, 4, 1) 100%);
+  &:visited {
+    border: 1px solid #b20000;
+    background-color: rgb(255, 48, 25);
+    background-image: linear-gradient(to bottom, rgba(255, 48, 25, 1) 0%, rgba(207, 4, 4, 1) 100%);
+  }
+}
+
+.ulp-link-button-green {
+  border: 1px solid #307818;
+  background-color: rgb(72, 180, 36);
+  background-image: linear-gradient(to bottom, rgba(72, 180, 36, 1) 0%, rgba(48, 120, 24, 1) 100%);
+  &:visited {
+    border: 1px solid #307818;
+    background-color: rgb(72, 180, 36);
+    background-image: linear-gradient(to bottom, rgba(72, 180, 36, 1) 0%, rgba(48, 120, 24, 1) 100%);
+  }
+}
+
+.ulp-link-button-blue {
+  border: 1px solid #306090;
+  background-color: rgb(40, 80, 200);
+  background-image: linear-gradient(to bottom, rgba(40, 80, 200, 1) 0%, rgba(30, 47, 144, 1) 100%);
+  &:visited {
+    border: 1px solid #306090;
+    background-color: rgb(40, 80, 200);
+    background-image: linear-gradient(to bottom, rgba(40, 80, 200, 1) 0%, rgba(30, 47, 144, 1) 100%);
+  }
+}
+
+.ulp-link-button-yellow {
+  border: 1px solid #e5a904;
+  background-color: rgb(255, 210, 90);
+  background-image: linear-gradient(to bottom, rgba(255, 210, 90, 1) 0%, rgba(255, 190, 0, 1) 100%);
+  &:visited {
+    border: 1px solid #e5a904;
+    background-color: rgb(255, 210, 90);
+    background-image: linear-gradient(to bottom, rgba(255, 210, 90, 1) 0%, rgba(255, 190, 0, 1) 100%);
+  }
+}
+
+.ulp-link-button-orange {
+  border: 1px solid #e56e0d;
+  background-color: rgb(255, 170, 78);
+  background-image: linear-gradient(to bottom, rgba(255, 170, 78, 1) 0%, rgba(255, 120, 10, 1) 100%);
+  &:visited {
+    border: 1px solid #e56e0d;
+    background-color: rgb(255, 170, 78);
+    background-image: linear-gradient(to bottom, rgba(255, 170, 78, 1) 0%, rgba(255, 120, 10, 1) 100%);
+  }
+}
+
+.ulp-link-button-pink {
+  border: 1px solid #cc026a;
+  background-color: rgb(255, 90, 170);
+  background-image: linear-gradient(to bottom, rgba(255, 90, 170, 1) 0%, rgba(240, 0, 120, 1) 100%);
+  &:visited {
+    border: 1px solid #cc026a;
+    background-color: rgb(255, 90, 170);
+    background-image: linear-gradient(to bottom, rgba(255, 90, 170, 1) 0%, rgba(240, 0, 120, 1) 100%);
+  }
+}
+
+.ulp-link-button-black {
+  border: 1px solid #000;
+  background-color: rgb(72, 72, 72);
+  &:visited {
+    border: 1px solid #000;
+    background-color: rgb(72, 72, 72);
+  }
+}
+
+.ulp-link-button-red {
+  &:hover,
+  &:focus,
+  &:active {
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, .01) 0%, rgba(255, 255, 255, .01) 100%);
+  }
+}
+
+.ulp-link-button-green {
+  &:hover,
+  &:focus,
+  &:active {
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, .01) 0%, rgba(255, 255, 255, .01) 100%);
+  }
+}
+
+.ulp-link-button-blue {
+  &:hover,
+  &:focus,
+  &:active {
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, .01) 0%, rgba(255, 255, 255, .01) 100%);
+  }
+}
+
+.ulp-link-button-yellow {
+  &:hover,
+  &:focus,
+  &:active {
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, .01) 0%, rgba(255, 255, 255, .01) 100%);
+  }
+}
+
+.ulp-link-button-pink {
+  &:hover,
+  &:focus,
+  &:active {
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, .01) 0%, rgba(255, 255, 255, .01) 100%);
+  }
+}
+
+.ulp-link-button-black {
+  &:hover,
+  &:focus,
+  &:active {
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, .01) 0%, rgba(255, 255, 255, .01) 100%);
+  }
+}
+
+.ulp-link-button-orange {
+  &:hover,
+  &:focus,
+  &:active {
+    background-image: linear-gradient(to bottom, rgba(255, 255, 255, .01) 0%, rgba(255, 255, 255, .01) 100%);
+  }
+}
+
+.ps-container {
+  .ps-scrollbar-x-rail {
+    position: absolute;
+    bottom: 3px;
+
+    height: 8px;
+
+    transition: background-color .2s linear,opacity .2s linear;
+
+    opacity: 0;
+    border-radius: 4px;
+  }
+  &:hover .ps-scrollbar-x-rail,
+  &.hover .ps-scrollbar-x-rail {
+    opacity: .6;
+  }
+  .ps-scrollbar-x-rail {
+    &:hover,
+    &.hover {
+      opacity: .9;
+      background-color: #eee;
+    }
+    &.in-scrolling {
+      opacity: .9;
+    }
+  }
+  .ps-scrollbar-y-rail {
+    position: absolute;
+    right: 3px;
+
+    width: 8px;
+
+    transition: background-color .2s linear,opacity .2s linear;
+
+    opacity: 0;
+    border-radius: 4px;
+  }
+  &:hover .ps-scrollbar-y-rail,
+  &.hover .ps-scrollbar-y-rail {
+    opacity: .6;
+  }
+  .ps-scrollbar-y-rail {
+    &:hover,
+    &.hover {
+      opacity: .9;
+      background-color: #eee;
+    }
+    &.in-scrolling {
+      opacity: .9;
+    }
+  }
+  .ps-scrollbar-x {
+    position: absolute;
+    bottom: 0;
+
+    height: 8px;
+
+    transition: background-color .2s linear;
+
+    border-radius: 4px;
+    background-color: #aaa;
+  }
+  &.ie6 .ps-scrollbar-x {
+    font-size: 0;
+  }
+  .ps-scrollbar-x-rail {
+    &:hover .ps-scrollbar-x,
+    &.hover .ps-scrollbar-x {
+      background-color: #999;
+    }
+  }
+  .ps-scrollbar-y {
+    position: absolute;
+    right: 0;
+
+    width: 8px;
+
+    transition: background-color .2s linear;
+
+    border-radius: 4px;
+    background-color: #aaa;
+  }
+  &.ie .ps-scrollbar-y {
+    font-size: 0;
+  }
+  .ps-scrollbar-y-rail {
+    &:hover .ps-scrollbar-y,
+    &.hover .ps-scrollbar-y {
+      background-color: #999;
+    }
+  }
+}
+
+@charset 'UTF-8';
+
+.ulp-animated {
+  animation-duration: 1s;
+
+  animation-fill-mode: both;
+  &.ulp-infinite {
+    animation-iteration-count: infinite;
+  }
+  &.ulp-hinge {
+    animation-duration: 2s;
+  }
+}
+
+
+
+@keyframes ulp-bounce {
+  0%,
+  20%,
+  53%,
+  80%,
+  100% {
+    transition-timing-function: cubic-bezier(.215, .61, .355, 1);
+    transform: translate3d(0, 0, 0);
+  }
+
+  40%,
+  43% {
+    transition-timing-function: cubic-bezier(.755, .05, .855, .06);
+    transform: translate3d(0, -30px, 0);
+  }
+
+  70% {
+    transition-timing-function: cubic-bezier(.755, .05, .855, .06);
+    transform: translate3d(0, -15px, 0);
+  }
+
+  90% {
+    transform: translate3d(0, -4px, 0);
+  }
+}
+
+
+.ulp-bounce {
+  transform-origin: center bottom;
+  animation-name: ulp-bounce;
+}
+
+
+
+
+@keyframes flash {
+  0%,
+  50%,
+  100% {
+    opacity: 1;
+  }
+
+  25%,
+  75% {
+    opacity: 0;
+  }
+}
+
+
+.ulp-flash {
+  animation-name: ulp-flash;
+}
+
+
+
+@keyframes ulp-pulse {
+  0% {
+    transform: scale3d(1, 1, 1);
+  }
+
+  50% {
+    transform: scale3d(1.05, 1.05, 1.05);
+  }
+
+  100% {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+
+.ulp-pulse {
+  animation-name: ulp-pulse;
+}
+
+@keyframes ulp-rubberBand {
+  0% {
+    transform: scale3d(1, 1, 1);
+  }
+
+  30% {
+    transform: scale3d(1.25, .75, 1);
+  }
+
+  40% {
+    transform: scale3d(.75, 1.25, 1);
+  }
+
+  50% {
+    transform: scale3d(1.15, .85, 1);
+  }
+
+  65% {
+    transform: scale3d(.95, 1.05, 1);
+  }
+
+  75% {
+    transform: scale3d(1.05, .95, 1);
+  }
+
+  100% {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+
+.ulp-rubberBand {
+  animation-name: ulp-rubberBand;
+}
+
+
+@keyframes ulp-shake {
+  0%,
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+
+  10%,
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: translate3d(-10px, 0, 0);
+  }
+
+  20%,
+  40%,
+  60%,
+  80% {
+    transform: translate3d(10px, 0, 0);
+  }
+}
+
+
+.ulp-shake {
+  animation-name: ulp-shake;
+}
+
+
+@keyframes ulp-swing {
+  20% {
+    transform: rotate3d(0, 0, 1, 15deg);
+  }
+
+  40% {
+    transform: rotate3d(0, 0, 1, -10deg);
+  }
+
+  60% {
+    transform: rotate3d(0, 0, 1, 5deg);
+  }
+
+  80% {
+    transform: rotate3d(0, 0, 1, -5deg);
+  }
+
+  100% {
+    transform: rotate3d(0, 0, 1, 0deg);
+  }
+}
+
+
+.ulp-swing {
+  transform-origin: top center;
+  animation-name: ulp-swing;
+}
+
+
+@keyframes ulp-tada {
+  0% {
+    transform: scale3d(1, 1, 1);
+  }
+
+  10%,
+  20% {
+    transform: scale3d(.9, .9, .9) rotate3d(0, 0, 1, -3deg);
+  }
+
+  30%,
+  50%,
+  70%,
+  90% {
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, 3deg);
+  }
+
+  40%,
+  60%,
+  80% {
+    transform: scale3d(1.1, 1.1, 1.1) rotate3d(0, 0, 1, -3deg);
+  }
+
+  100% {
+    transform: scale3d(1, 1, 1);
+  }
+}
+
+
+.ulp-tada {
+  animation-name: ulp-tada;
+}
+
+
+@keyframes ulp-wobble {
+  0% {
+    transform: none;
+  }
+
+  15% {
+    transform: translate3d(-25%, 0, 0) rotate3d(0, 0, 1, -5deg);
+  }
+
+  30% {
+    transform: translate3d(20%, 0, 0) rotate3d(0, 0, 1, 3deg);
+  }
+
+  45% {
+    transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, -3deg);
+  }
+
+  60% {
+    transform: translate3d(10%, 0, 0) rotate3d(0, 0, 1, 2deg);
+  }
+
+  75% {
+    transform: translate3d(-5%, 0, 0) rotate3d(0, 0, 1, -1deg);
+  }
+
+  100% {
+    transform: none;
+  }
+}
+
+
+.ulp-wobble {
+  animation-name: ulp-wobble;
+}
+
+
+@keyframes ulp-bounceIn {
+  0%,
+  20%,
+  40%,
+  60%,
+  80%,
+  100% {
+    transition-timing-function: cubic-bezier(.215, .61, .355, 1);
+  }
+
+  0% {
+    transform: scale3d(.3, .3, .3);
+
+    opacity: 0;
+  }
+
+  20% {
+    transform: scale3d(1.1, 1.1, 1.1);
+  }
+
+  40% {
+    transform: scale3d(.9, .9, .9);
+  }
+
+  60% {
+    transform: scale3d(1.03, 1.03, 1.03);
+
+    opacity: 1;
+  }
+
+  80% {
+    transform: scale3d(.97, .97, .97);
+  }
+
+  100% {
+    transform: scale3d(1, 1, 1);
+
+    opacity: 1;
+  }
+}
+
+
+.ulp-bounceIn {
+  animation-name: ulp-bounceIn;
+  animation-duration: .75s;
+}
+
+
+@keyframes ulp-bounceInDown {
+  0%,
+  60%,
+  75%,
+  90%,
+  100% {
+    transition-timing-function: cubic-bezier(.215, .61, .355, 1);
+  }
+
+  0% {
+    transform: translate3d(0, -3000px, 0);
+
+    opacity: 0;
+  }
+
+  60% {
+    transform: translate3d(0, 25px, 0);
+
+    opacity: 1;
+  }
+
+  75% {
+    transform: translate3d(0, -10px, 0);
+  }
+
+  90% {
+    transform: translate3d(0, 5px, 0);
+  }
+
+  100% {
+    transform: none;
+  }
+}
+
+
+.ulp-bounceInDown {
+  animation-name: ulp-bounceInDown;
+}
+
+
+@keyframes ulp-bounceInLeft {
+  0%,
+  60%,
+  75%,
+  90%,
+  100% {
+    transition-timing-function: cubic-bezier(.215, .61, .355, 1);
+  }
+
+  0% {
+    transform: translate3d(-3000px, 0, 0);
+
+    opacity: 0;
+  }
+
+  60% {
+    transform: translate3d(25px, 0, 0);
+
+    opacity: 1;
+  }
+
+  75% {
+    transform: translate3d(-10px, 0, 0);
+  }
+
+  90% {
+    transform: translate3d(5px, 0, 0);
+  }
+
+  100% {
+    transform: none;
+  }
+}
+
+
+.ulp-bounceInLeft {
+  animation-name: ulp-bounceInLeft;
+}
+
+
+@keyframes ulp-bounceInRight {
+  0%,
+  60%,
+  75%,
+  90%,
+  100% {
+    transition-timing-function: cubic-bezier(.215, .61, .355, 1);
+  }
+
+  0% {
+    transform: translate3d(3000px, 0, 0);
+
+    opacity: 0;
+  }
+
+  60% {
+    transform: translate3d(-25px, 0, 0);
+
+    opacity: 1;
+  }
+
+  75% {
+    transform: translate3d(10px, 0, 0);
+  }
+
+  90% {
+    transform: translate3d(-5px, 0, 0);
+  }
+
+  100% {
+    transform: none;
+  }
+}
+
+
+.ulp-bounceInRight {
+  animation-name: ulp-bounceInRight;
+}
+
+
+@keyframes ulp-bounceInUp {
+  0%,
+  60%,
+  75%,
+  90%,
+  100% {
+    transition-timing-function: cubic-bezier(.215, .61, .355, 1);
+  }
+
+  0% {
+    transform: translate3d(0, 3000px, 0);
+
+    opacity: 0;
+  }
+
+  60% {
+    transform: translate3d(0, -20px, 0);
+
+    opacity: 1;
+  }
+
+  75% {
+    transform: translate3d(0, 10px, 0);
+  }
+
+  90% {
+    transform: translate3d(0, -5px, 0);
+  }
+
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
+
+
+.ulp-bounceInUp {
+  animation-name: ulp-bounceInUp;
+}
+
+
+@keyframes ulp-bounceOut {
+  20% {
+    transform: scale3d(.9, .9, .9);
+  }
+
+  50%,
+  55% {
+    transform: scale3d(1.1, 1.1, 1.1);
+
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale3d(.3, .3, .3);
+
+    opacity: 0;
+  }
+}
+
+
+.ulp-bounceOut {
+  animation-name: ulp-bounceOut;
+  animation-duration: .75s;
+}
+
+@keyframes ulp-bounceOutDown {
+  20% {
+    transform: translate3d(0, 10px, 0);
+  }
+
+  40%,
+  45% {
+    transform: translate3d(0, -20px, 0);
+
+    opacity: 1;
+  }
+
+  100% {
+    transform: translate3d(0, 2000px, 0);
+
+    opacity: 0;
+  }
+}
+
+
+.ulp-bounceOutDown {
+  animation-name: ulp-bounceOutDown;
+}
+
+@keyframes ulp-bounceOutLeft {
+  20% {
+    transform: translate3d(20px, 0, 0);
+
+    opacity: 1;
+  }
+
+  100% {
+    transform: translate3d(-2000px, 0, 0);
+
+    opacity: 0;
+  }
+}
+
+
+.ulp-bounceOutLeft {
+  animation-name: ulp-bounceOutLeft;
+}
+
+
+@keyframes ulp-bounceOutRight {
+  20% {
+    transform: translate3d(-20px, 0, 0);
+
+    opacity: 1;
+  }
+
+  100% {
+    transform: translate3d(2000px, 0, 0);
+
+    opacity: 0;
+  }
+}
+
+
+.ulp-bounceOutRight {
+  animation-name: ulp-bounceOutRight;
+}
+
+
+@keyframes ulp-bounceOutUp {
+  20% {
+    transform: translate3d(0, -10px, 0);
+  }
+
+  40%,
+  45% {
+    transform: translate3d(0, 20px, 0);
+
+    opacity: 1;
+  }
+
+  100% {
+    transform: translate3d(0, -2000px, 0);
+
+    opacity: 0;
+  }
+}
+
+
+.ulp-bounceOutUp {
+  animation-name: ulp-bounceOutUp;
+}
+
+
+@keyframes ulp-fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+
+.ulp-fadeIn {
+  animation-name: ulp-fadeIn;
+}
+
+@keyframes ulp-fadeInDown {
+  0% {
+    transform: translate3d(0, -100%, 0);
+
+    opacity: 0;
+  }
+
+  100% {
+    transform: none;
+
+    opacity: 1;
+  }
+}
+
+
+.ulp-fadeInDown {
+  animation-name: ulp-fadeInDown;
+}
+
+
+
+@keyframes ulp-fadeInDownBig {
+  0% {
+    transform: translate3d(0, -2000px, 0);
+
+    opacity: 0;
+  }
+
+  100% {
+    transform: none;
+
+    opacity: 1;
+  }
+}
+
+
+.ulp-fadeInDownBig {
+  animation-name: ulp-fadeInDownBig;
+}
+
+@keyframes ulp-fadeInLeft {
+  0% {
+    transform: translate3d(-100%, 0, 0);
+
+    opacity: 0;
+  }
+
+  100% {
+    transform: none;
+
+    opacity: 1;
+  }
+}
+
+
+.ulp-fadeInLeft {
+  animation-name: ulp-fadeInLeft;
+}
+
+
+@keyframes ulp-fadeInLeftBig {
+  0% {
+    transform: translate3d(-2000px, 0, 0);
+
+    opacity: 0;
+  }
+
+  100% {
+    transform: none;
+
+    opacity: 1;
+  }
+}
+
+
+.ulp-fadeInLeftBig {
+  animation-name: ulp-fadeInLeftBig;
+}
+
+@keyframes ulp-fadeInRight {
+  0% {
+    transform: translate3d(100%, 0, 0);
+
+    opacity: 0;
+  }
+
+  100% {
+    transform: none;
+
+    opacity: 1;
+  }
+}
+
+
+.ulp-fadeInRight {
+  animation-name: ulp-fadeInRight;
+}
+
+
+
+@keyframes ulp-fadeInRightBig {
+  0% {
+    transform: translate3d(2000px, 0, 0);
+
+    opacity: 0;
+  }
+
+  100% {
+    transform: none;
+
+    opacity: 1;
+  }
+}
+
+
+.ulp-fadeInRightBig {
+  animation-name: ulp-fadeInRightBig;
+}
+
+
+@keyframes ulp-fadeInUp {
+  0% {
+    transform: translate3d(0, 100%, 0);
+
+    opacity: 0;
+  }
+
+  100% {
+    transform: none;
+
+    opacity: 1;
+  }
+}
+
+
+.ulp-fadeInUp {
+  animation-name: ulp-fadeInUp;
+}
+
+
+
+@keyframes ulp-fadeInUpBig {
+  0% {
+    transform: translate3d(0, 2000px, 0);
+
+    opacity: 0;
+  }
+
+  100% {
+    transform: none;
+
+    opacity: 1;
+  }
+}
+
+
+.ulp-fadeInUpBig {
+  animation-name: ulp-fadeInUpBig;
+}
+
+
+@keyframes ulp-fadeOut {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+
+.ulp-fadeOut {
+  animation-name: ulp-fadeOut;
+}
+
+
+@keyframes ulp-fadeOutDown {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: translate3d(0, 100%, 0);
+
+    opacity: 0;
+  }
+}
+
+
+.ulp-fadeOutDown {
+  animation-name: ulp-fadeOutDown;
+}
+
+
+
+@keyframes ulp-fadeOutDownBig {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: translate3d(0, 2000px, 0);
+
+    opacity: 0;
+  }
+}
+
+
+.ulp-fadeOutDownBig {
+  animation-name: ulp-fadeOutDownBig;
+}
+
+
+@keyframes ulp-fadeOutLeft {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: translate3d(-100%, 0, 0);
+
+    opacity: 0;
+  }
+}
+
+
+.ulp-fadeOutLeft {
+  animation-name: ulp-fadeOutLeft;
+}
+
+
+@keyframes ulp-fadeOutLeftBig {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: translate3d(-2000px, 0, 0);
+
+    opacity: 0;
+  }
+}
+
+
+.ulp-fadeOutLeftBig {
+  animation-name: ulp-fadeOutLeftBig;
+}
+
+
+@keyframes ulp-fadeOutRight {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: translate3d(100%, 0, 0);
+
+    opacity: 0;
+  }
+}
+
+
+.ulp-fadeOutRight {
+  animation-name: ulp-fadeOutRight;
+}
+
+
+@keyframes ulp-fadeOutRightBig {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: translate3d(2000px, 0, 0);
+
+    opacity: 0;
+  }
+}
+
+
+.ulp-fadeOutRightBig {
+  animation-name: ulp-fadeOutRightBig;
+}
+
+
+
+@keyframes ulp-fadeOutUp {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: translate3d(0, -100%, 0);
+
+    opacity: 0;
+  }
+}
+
+
+.ulp-fadeOutUp {
+  animation-name: ulp-fadeOutUp;
+}
+
+
+
+@keyframes ulp-fadeOutUpBig {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: translate3d(0, -2000px, 0);
+
+    opacity: 0;
+  }
+}
+
+
+.ulp-fadeOutUpBig {
+  animation-name: ulp-fadeOutUpBig;
+}
+
+
+
+
+@keyframes ulp-flip {
+  0% {
+    transform: perspective(400px) rotate3d(0, 1, 0, -360deg);
+    animation-timing-function: ease-out;
+  }
+
+  40% {
+    transform: perspective(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -190deg);
+    animation-timing-function: ease-out;
+  }
+
+  50% {
+    transform: perspective(400px) translate3d(0, 0, 150px) rotate3d(0, 1, 0, -170deg);
+    animation-timing-function: ease-in;
+  }
+
+  80% {
+    transform: perspective(400px) scale3d(.95, .95, .95);
+    animation-timing-function: ease-in;
+  }
+
+  100% {
+    transform: perspective(400px);
+    animation-timing-function: ease-in;
+  }
+}
+
+
+.ulp-animated.ulp-flip {
+  animation-name: ulp-flip;
+
+  backface-visibility: visible;
+}
+
+
+
+@keyframes ulp-flipInX {
+  0% {
+    transition-timing-function: ease-in;
+    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+
+    opacity: 0;
+  }
+
+  40% {
+    transition-timing-function: ease-in;
+    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+  }
+
+  60% {
+    transform: perspective(400px) rotate3d(1, 0, 0, 10deg);
+
+    opacity: 1;
+  }
+
+  80% {
+    transform: perspective(400px) rotate3d(1, 0, 0, -5deg);
+  }
+
+  100% {
+    transform: perspective(400px);
+  }
+}
+
+
+.ulp-flipInX {
+  animation-name: ulp-flipInX;
+
+  backface-visibility: visible !important;
+}
+
+
+
+@keyframes ulp-flipInY {
+  0% {
+    transition-timing-function: ease-in;
+    transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+
+    opacity: 0;
+  }
+
+  40% {
+    transition-timing-function: ease-in;
+    transform: perspective(400px) rotate3d(0, 1, 0, -20deg);
+  }
+
+  60% {
+    transform: perspective(400px) rotate3d(0, 1, 0, 10deg);
+
+    opacity: 1;
+  }
+
+  80% {
+    transform: perspective(400px) rotate3d(0, 1, 0, -5deg);
+  }
+
+  100% {
+    transform: perspective(400px);
+  }
+}
+
+
+.ulp-flipInY {
+  animation-name: ulp-flipInY;
+
+  backface-visibility: visible !important;
+}
+
+
+
+@keyframes ulp-flipOutX {
+  0% {
+    transform: perspective(400px);
+  }
+
+  30% {
+    transform: perspective(400px) rotate3d(1, 0, 0, -20deg);
+
+    opacity: 1;
+  }
+
+  100% {
+    transform: perspective(400px) rotate3d(1, 0, 0, 90deg);
+
+    opacity: 0;
+  }
+}
+
+
+.ulp-flipOutX {
+  animation-name: ulp-flipOutX;
+  animation-duration: .75s;
+
+  backface-visibility: visible !important;
+}
+
+
+
+@keyframes ulp-flipOutY {
+  0% {
+    transform: perspective(400px);
+  }
+
+  30% {
+    transform: perspective(400px) rotate3d(0, 1, 0, -15deg);
+
+    opacity: 1;
+  }
+
+  100% {
+    transform: perspective(400px) rotate3d(0, 1, 0, 90deg);
+
+    opacity: 0;
+  }
+}
+
+
+.ulp-flipOutY {
+  animation-name: ulp-flipOutY;
+  animation-duration: .75s;
+
+  backface-visibility: visible !important;
+}
+
+
+
+@keyframes ulp-lightSpeedIn {
+  0% {
+    transform: translate3d(100%, 0, 0) skewX(-30deg);
+
+    opacity: 0;
+  }
+
+  60% {
+    transform: skewX(20deg);
+
+    opacity: 1;
+  }
+
+  80% {
+    transform: skewX(-5deg);
+
+    opacity: 1;
+  }
+
+  100% {
+    transform: none;
+
+    opacity: 1;
+  }
+}
+
+
+.ulp-lightSpeedIn {
+  animation-name: ulp-lightSpeedIn;
+  animation-timing-function: ease-out;
+}
+
+
+
+@keyframes ulp-lightSpeedOut {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: translate3d(100%, 0, 0) skewX(30deg);
+
+    opacity: 0;
+  }
+}
+
+
+.ulp-lightSpeedOut {
+  animation-name: ulp-lightSpeedOut;
+  animation-timing-function: ease-in;
+}
+
+
+
+@keyframes ulp-rotateIn {
+  0% {
+    transform: rotate3d(0, 0, 1, -200deg);
+    transform-origin: center;
+
+    opacity: 0;
+  }
+
+  100% {
+    transform: none;
+    transform-origin: center;
+
+    opacity: 1;
+  }
+}
+
+
+.ulp-rotateIn {
+  animation-name: ulp-rotateIn;
+}
+
+
+
+@keyframes ulp-rotateInDownLeft {
+  0% {
+    transform: rotate3d(0, 0, 1, -45deg);
+    transform-origin: left bottom;
+
+    opacity: 0;
+  }
+
+  100% {
+    transform: none;
+    transform-origin: left bottom;
+
+    opacity: 1;
+  }
+}
+
+
+.ulp-rotateInDownLeft {
+  animation-name: ulp-rotateInDownLeft;
+}
+
+
+@keyframes ulp-rotateInDownRight {
+  0% {
+    transform: rotate3d(0, 0, 1, 45deg);
+    transform-origin: right bottom;
+
+    opacity: 0;
+  }
+
+  100% {
+    transform: none;
+    transform-origin: right bottom;
+
+    opacity: 1;
+  }
+}
+
+
+.ulp-rotateInDownRight {
+  animation-name: ulp-rotateInDownRight;
+}
+
+
+@keyframes ulp-rotateInUpLeft {
+  0% {
+    transform: rotate3d(0, 0, 1, 45deg);
+    transform-origin: left bottom;
+
+    opacity: 0;
+  }
+
+  100% {
+    transform: none;
+    transform-origin: left bottom;
+
+    opacity: 1;
+  }
+}
+
+
+.ulp-rotateInUpLeft {
+  animation-name: ulp-rotateInUpLeft;
+}
+
+
+@keyframes ulp-rotateInUpRight {
+  0% {
+    transform: rotate3d(0, 0, 1, -90deg);
+    transform-origin: right bottom;
+
+    opacity: 0;
+  }
+
+  100% {
+    transform: none;
+    transform-origin: right bottom;
+
+    opacity: 1;
+  }
+}
+
+
+.ulp-rotateInUpRight {
+  animation-name: ulp-rotateInUpRight;
+}
+
+
+
+@keyframes ulp-rotateOut {
+  0% {
+    transform-origin: center;
+
+    opacity: 1;
+  }
+
+  100% {
+    transform: rotate3d(0, 0, 1, 200deg);
+    transform-origin: center;
+
+    opacity: 0;
+  }
+}
+
+
+.ulp-rotateOut {
+  animation-name: ulp-rotateOut;
+}
+
+@keyframes ulp-rotateOutDownLeft {
+  0% {
+    transform-origin: left bottom;
+
+    opacity: 1;
+  }
+
+  100% {
+    transform: rotate3d(0, 0, 1, 45deg);
+    transform-origin: left bottom;
+
+    opacity: 0;
+  }
+}
+
+
+.ulp-rotateOutDownLeft {
+  animation-name: ulp-rotateOutDownLeft;
+}
+
+
+
+@keyframes ulp-rotateOutDownRight {
+  0% {
+    transform-origin: right bottom;
+
+    opacity: 1;
+  }
+
+  100% {
+    transform: rotate3d(0, 0, 1, -45deg);
+    transform-origin: right bottom;
+
+    opacity: 0;
+  }
+}
+
+
+.ulp-rotateOutDownRight {
+  animation-name: ulp-rotateOutDownRight;
+}
+
+
+
+@keyframes ulp-rotateOutUpLeft {
+  0% {
+    transform-origin: left bottom;
+
+    opacity: 1;
+  }
+
+  100% {
+    transform: rotate3d(0, 0, 1, -45deg);
+    transform-origin: left bottom;
+
+    opacity: 0;
+  }
+}
+
+
+.ulp-rotateOutUpLeft {
+  animation-name: ulp-rotateOutUpLeft;
+}
+
+
+@keyframes ulp-rotateOutUpRight {
+  0% {
+    transform-origin: right bottom;
+
+    opacity: 1;
+  }
+
+  100% {
+    transform: rotate3d(0, 0, 1, 90deg);
+    transform-origin: right bottom;
+
+    opacity: 0;
+  }
+}
+
+
+.ulp-rotateOutUpRight {
+  animation-name: ulp-rotateOutUpRight;
+}
+
+
+
+@keyframes ulp-hinge {
+  0% {
+    transform-origin: top left;
+    animation-timing-function: ease-in-out;
+  }
+
+  20%,
+  60% {
+    transform: rotate3d(0, 0, 1, 80deg);
+    transform-origin: top left;
+    animation-timing-function: ease-in-out;
+  }
+
+  40%,
+  80% {
+    transform: rotate3d(0, 0, 1, 60deg);
+    transform-origin: top left;
+    animation-timing-function: ease-in-out;
+
+    opacity: 1;
+  }
+
+  100% {
+    transform: translate3d(0, 700px, 0);
+
+    opacity: 0;
+  }
+}
+
+
+.ulp-hinge {
+  animation-name: ulp-hinge;
+}
+
+
+
+@keyframes ulp-rollIn {
+  0% {
+    transform: translate3d(-100%, 0, 0) rotate3d(0, 0, 1, -120deg);
+
+    opacity: 0;
+  }
+
+  100% {
+    transform: none;
+
+    opacity: 1;
+  }
+}
+
+
+.ulp-rollIn {
+  animation-name: ulp-rollIn;
+}
+
+
+
+@keyframes ulp-rollOut {
+  0% {
+    opacity: 1;
+  }
+
+  100% {
+    transform: translate3d(100%, 0, 0) rotate3d(0, 0, 1, 120deg);
+
+    opacity: 0;
+  }
+}
+
+
+.ulp-rollOut {
+  animation-name: ulp-rollOut;
+}
+
+
+
+@keyframes ulp-zoomIn {
+  0% {
+    transform: scale3d(.3, .3, .3);
+
+    opacity: 0;
+  }
+
+  50% {
+    opacity: 1;
+  }
+}
+
+
+.ulp-zoomIn {
+  animation-name: ulp-zoomIn;
+}
+
+
+
+@keyframes ulp-zoomInDown {
+  0% {
+    transform: scale3d(.1, .1, .1) translate3d(0, -1000px, 0);
+    animation-timing-function: cubic-bezier(.55, .055, .675, .19);
+
+    opacity: 0;
+  }
+
+  60% {
+    transform: scale3d(.475, .475, .475) translate3d(0, 60px, 0);
+    animation-timing-function: cubic-bezier(.175, .885, .32, 1);
+
+    opacity: 1;
+  }
+}
+
+
+.ulp-zoomInDown {
+  animation-name: ulp-zoomInDown;
+}
+
+
+@keyframes ulp-zoomInLeft {
+  0% {
+    transform: scale3d(.1, .1, .1) translate3d(-1000px, 0, 0);
+    animation-timing-function: cubic-bezier(.55, .055, .675, .19);
+
+    opacity: 0;
+  }
+
+  60% {
+    transform: scale3d(.475, .475, .475) translate3d(10px, 0, 0);
+    animation-timing-function: cubic-bezier(.175, .885, .32, 1);
+
+    opacity: 1;
+  }
+}
+
+
+.ulp-zoomInLeft {
+  animation-name: ulp-zoomInLeft;
+}
+
+
+@keyframes ulp-zoomInRight {
+  0% {
+    transform: scale3d(.1, .1, .1) translate3d(1000px, 0, 0);
+    animation-timing-function: cubic-bezier(.55, .055, .675, .19);
+
+    opacity: 0;
+  }
+
+  60% {
+    transform: scale3d(.475, .475, .475) translate3d(-10px, 0, 0);
+    animation-timing-function: cubic-bezier(.175, .885, .32, 1);
+
+    opacity: 1;
+  }
+}
+
+
+.ulp-zoomInRight {
+  animation-name: ulp-zoomInRight;
+}
+
+
+@keyframes ulp-zoomInUp {
+  0% {
+    transform: scale3d(.1, .1, .1) translate3d(0, 1000px, 0);
+    animation-timing-function: cubic-bezier(.55, .055, .675, .19);
+
+    opacity: 0;
+  }
+
+  60% {
+    transform: scale3d(.475, .475, .475) translate3d(0, -60px, 0);
+    animation-timing-function: cubic-bezier(.175, .885, .32, 1);
+
+    opacity: 1;
+  }
+}
+
+
+.ulp-zoomInUp {
+  animation-name: ulp-zoomInUp;
+}
+
+
+@keyframes ulp-zoomOut {
+  0% {
+    opacity: 1;
+  }
+
+  50% {
+    transform: scale3d(.3, .3, .3);
+
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 0;
+  }
+}
+
+
+.ulp-zoomOut {
+  animation-name: ulp-zoomOut;
+}
+
+
+@keyframes ulp-zoomOutDown {
+  40% {
+    transform: scale3d(.475, .475, .475) translate3d(0, -60px, 0);
+    animation-timing-function: cubic-bezier(.55, .055, .675, .19);
+
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale3d(.1, .1, .1) translate3d(0, 2000px, 0);
+    transform-origin: center bottom;
+    animation-timing-function: cubic-bezier(.175, .885, .32, 1);
+
+    opacity: 0;
+  }
+}
+
+
+.ulp-zoomOutDown {
+  animation-name: ulp-zoomOutDown;
+}
+
+
+@keyframes ulp-zoomOutLeft {
+  40% {
+    transform: scale3d(.475, .475, .475) translate3d(42px, 0, 0);
+
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(.1) translate3d(-2000px, 0, 0);
+    transform-origin: left center;
+
+    opacity: 0;
+  }
+}
+
+
+.ulp-zoomOutLeft {
+  animation-name: ulp-zoomOutLeft;
+}
+
+
+@keyframes ulp-zoomOutRight {
+  40% {
+    transform: scale3d(.475, .475, .475) translate3d(-42px, 0, 0);
+
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale(.1) translate3d(2000px, 0, 0);
+    transform-origin: right center;
+
+    opacity: 0;
+  }
+}
+
+
+.ulp-zoomOutRight {
+  animation-name: ulp-zoomOutRight;
+}
+
+
+
+@keyframes ulp-zoomOutUp {
+  40% {
+    transform: scale3d(.475, .475, .475) translate3d(0, 60px, 0);
+    animation-timing-function: cubic-bezier(.55, .055, .675, .19);
+
+    opacity: 1;
+  }
+
+  100% {
+    transform: scale3d(.1, .1, .1) translate3d(0, -2000px, 0);
+    transform-origin: center bottom;
+    animation-timing-function: cubic-bezier(.175, .885, .32, 1);
+
+    opacity: 0;
+  }
+}
+
+
+.ulp-zoomOutUp {
+  animation-name: ulp-zoomOutUp;
+}
+
+
+
+
+
+
+
+
+
+
 @import 'original/providers';
-@import 'original/review-site';
+
+.comparison_table {
+  width: 100%;
+  padding: 0;
+
+  border-collapse: collapse;
+
+  border: 1px solid #ccc;
+  th,
+  td {
+    font-family: Arial;
+    font-size: 10pt;
+    font-weight: bold;
+
+    padding: 7px;
+
+    text-align: center;
+    vertical-align: middle;
+    white-space: nowrap;
+  }
+  th {
+    font-size: 12pt;
+
+    text-transform: uppercase;
+
+    background: #eee;
+  }
+  tr.alternate td {
+    background: #f6f6f6;
+  }
+}
+
+table.ratings {
+  margin: 0;
+  padding: 0;
+
+  border-collapse: collapse;
+
+  border: 0;
+  tr {
+    border-bottom: 1px dashed #ccc;
+  }
+}
+
+ul.ratings {
+  margin: 0;
+  padding: 0;
+  li {
+    display: inline;
+
+    list-style: none;
+  }
+}
+
+.rating_label {
+  font-size: 9pt;
+
+  padding: 1px 4px;
+
+  white-space: nowrap;
+}
+
+.rating_value {
+  font-family: Arial;
+  font-size: 8pt;
+
+  padding: 1px 3px;
+
+  white-space: nowrap;
+  .no_ratings {
+    color: #666;
+  }
+}
 
 .rating_value {
   a {
@@ -27,5 +5176,3 @@
     background: url(/wp-content/plugins/review-site/images/star.gif) no-repeat;
   }
 }
-
-@import 'import/print';
