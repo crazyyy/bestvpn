@@ -2390,7 +2390,9 @@ a {
           border: 0;
         }
         .cover {
-          width: 100%;
+          img {
+            width: 100%;
+          }
         }
         .imgcover {
           position: absolute;
