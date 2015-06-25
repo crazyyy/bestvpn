@@ -69,12 +69,6 @@ div.aligncenter {
 .entry-pings {
   padding: $base-spacing $base-spacing $base-spacing;
 }
-.comment-respond,
-.entry-comments {
-  a {
-    border: $base-border;
-  }
-}
 
 .comment-content {
   @extend .clearfix;

@@ -33,7 +33,9 @@
       </div><!-- author_bottom -->
 
       <div class="comment_wrapper">
-        <?php comments_template(); ?>
+        <?php if ( comments_open() || get_comments_number() ) {
+            comments_template();
+          } ?>
       </div><!-- comment_wrapper -->
 
       <?php endwhile; else: ?>

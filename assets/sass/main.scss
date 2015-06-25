@@ -4,8 +4,9 @@
 @import 'import/forms';
 @import 'import/lists';
 @import 'import/tables';
-@import 'import/mixin.scss';
-@import 'import/wordpress.scss';
+@import 'import/mixin';
+@import 'import/wordpress';
+@import 'font_fontawesome';
 @import 'sprite';
 
 
@@ -5575,4 +5576,7 @@ ul.ratings {
   .on {
     background: url(../img/star.gif) no-repeat;
   }
+}
+.rating_value {
+
 }

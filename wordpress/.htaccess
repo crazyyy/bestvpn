@@ -1,17 +1,3 @@
-AddDefaultCharset UTF-8
-php_value memory_limit 512M
-
-# supress php errors
-php_flag display_startup_errors off
-php_flag display_errors off
-php_flag html_errors off
-php_value docref_root 0
-php_value docref_ext 0
-
-# enable PHP error logging
-php_flag  log_errors on
-php_value error_log  /home/d/dauzh7/altushkin.su/public_html/PHP_errors.log
-
 
 # BEGIN All In One WP Security
 #AIOWPS_BLOCK_WP_FILE_ACCESS_START
@@ -28,24 +14,6 @@ order allow,deny
 deny from all
 </Files>
 #AIOWPS_BLOCK_WP_FILE_ACCESS_END
-#AIOWPS_BASIC_HTACCESS_RULES_START
-<Files .htaccess>
-order allow,deny
-deny from all
-</Files>
-ServerSignature Off
-LimitRequestBody 10240000
-<Files wp-config.php>
-order allow,deny
-deny from all
-</Files>
-#AIOWPS_BASIC_HTACCESS_RULES_END
-#AIOWPS_PINGBACK_HTACCESS_RULES_START
-<Files xmlrpc.php>
-order deny,allow
-deny from all
-</Files>
-#AIOWPS_PINGBACK_HTACCESS_RULES_END
 #AIOWPS_DISABLE_INDEX_VIEWS_START
 Options -Indexes
 #AIOWPS_DISABLE_INDEX_VIEWS_END
@@ -154,18 +122,7 @@ RedirectMatch 403 admin\.webring\.docs\.
 Redirectmatch 403 Table\/Latest\/index\.
 </IfModule>
 #AIOWPS_ADVANCED_CHAR_STRING_FILTER_END
-#AIOWPS_BLOCK_SPAMBOTS_START
-<IfModule mod_rewrite.c>
-RewriteCond %{REQUEST_METHOD} POST
-RewriteCond %{REQUEST_URI} ^(.*)?wp-comments-post\.php(.*)$
-RewriteCond %{HTTP_REFERER} !^http(s)?://framework\.wp [NC,OR]
-RewriteCond %{HTTP_USER_AGENT} ^$
-RewriteRule .* http://127.0.0.1 [L]
-</IfModule>
-#AIOWPS_BLOCK_SPAMBOTS_END
 # END All In One WP Security
-
-
 
 # BEGIN WordPress
 <IfModule mod_rewrite.c>
@@ -178,15 +135,3 @@ RewriteRule . /index.php [L]
 </IfModule>
 
 # END WordPress
-
-# http://habrahabr.ru/company/xakep/blog/259843/
-# Для противодействия SQL-инъекциям блокируем запросы к URL, содержащие определенные ключевые слова:
-RewriteCond %{query_string} concat.*\( [NC,OR]
-RewriteCond %{query_string} union.*select.*\( [NC,OR]
-RewriteCond %{query_string} union.*all.*select [NC]
-RewriteRule ^(.*)$ index.php [F,L]
-# Чтобы испортить жизнь распространенным хакерским утилитам, отфильтровываем определенные user-agent’ы:
-SetEnvIf user-agent «Indy Library» stayout=1
-SetEnvIf user-agent «libwww-perl» stayout=1
-SetEnvIf user-agent «Wget» stayout=1
-deny from env=stayout
