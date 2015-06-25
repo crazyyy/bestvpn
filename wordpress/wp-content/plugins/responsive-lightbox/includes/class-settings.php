@@ -11,10 +11,8 @@ new Responsive_Lightbox_Settings();
  */
 class Responsive_Lightbox_Settings {
 
-	private $settings 		= array();
+	public $settings 		= array();
 	private $scripts 		= array();
-	private $options 		= array();
-	private $defaults 		= array();
 	private $tabs 			= array();
 	private $choices 		= array();
 	private $loading_places	= array();
@@ -866,7 +864,7 @@ class Responsive_Lightbox_Settings {
 				break;
 		}
 
-		$this->tabs = array(
+		$this->tabs = apply_filters( 'rl_settings_tabs', array(
 			'settings'	 => array(
 				'name'	 => __( 'General settings', 'responsive-lightbox' ),
 				'key'	 => 'responsive_lightbox_settings',
@@ -879,7 +877,7 @@ class Responsive_Lightbox_Settings {
 				'submit' => 'save_' . $this->settings['configuration']['prefix'] . '_configuration',
 				'reset'	 => 'reset_' . $this->settings['configuration']['prefix'] . '_configuration'
 			)
-		);
+		) );
 
 	}
 	
@@ -938,23 +936,32 @@ class Responsive_Lightbox_Settings {
 					</div>
 				</div>
 			
-				<form action="options.php" method="post">
-					<input type="hidden" name="script_r" value="' . esc_attr( Responsive_Lightbox()->options['settings']['script'] ) . '" />';
+				<form action="options.php" method="post">';
 
-		wp_nonce_field( 'update-options' );
-		settings_fields( $this->tabs[$tab_key]['key'] );
-		do_settings_sections( $this->tabs[$tab_key]['key'] );
+		// tab content callback
+		if ( ! empty( $this->tabs[$tab_key]['callback'] ) ) {
+			call_user_func( $this->tabs[$tab_key]['callback'] );
+		} else {
+			wp_nonce_field( 'update-options' );
+			settings_fields( $this->tabs[$tab_key]['key'] );
+			do_settings_sections( $this->tabs[$tab_key]['key'] );
+		}
 
+		if ( ! empty( $this->tabs[$tab_key]['submit'] ) || ! empty( $this->tabs[$tab_key]['reset'] ) ) {
+
+			echo '		<p class="submit">';	
+			if ( ! empty( $this->tabs[$tab_key]['submit'] ) ) {
+				submit_button( '', array( 'primary', 'save-' . $tab_key ), $this->tabs[$tab_key]['submit'], false );
+				echo ' ';
+			}
+			if ( ! empty( $this->tabs[$tab_key]['reset'] ) ) {
+				submit_button( __( 'Reset to defaults', 'responsive-lightbox' ), array( 'secondary', 'reset-' . $tab_key ), $this->tabs[$tab_key]['reset'], false );
+			}
+			echo '		</p>';
+		
+		}
+		
 		echo '
-					<p class="submit">';
-
-		submit_button( '', array( 'primary', 'save-' . $tab_key ), $this->tabs[$tab_key]['submit'], false );
-
-		echo ' ';
-		echo submit_button( __( 'Reset to defaults', 'responsive-lightbox' ), array( 'secondary', 'reset-' . $tab_key ), $this->tabs[$tab_key]['reset'], false );
-
-		echo '
-					</p>
 				</form>
 			</div>
 			<div class="clear"></div>

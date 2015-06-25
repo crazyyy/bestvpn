@@ -1,7 +1,7 @@
 <?php
 // common functions for Standard and Cloud plugins
 
-define( 'EWWW_IMAGE_OPTIMIZER_VERSION', '244.0' );
+define( 'EWWW_IMAGE_OPTIMIZER_VERSION', '245.0' );
 
 // initialize debug global
 $disabled = ini_get( 'disable_functions' );
@@ -26,10 +26,6 @@ $ewww_debug .= 'PHP version: ' . PHP_VERSION_ID . '<br>';
 if ( WP_DEBUG ) {
 	$ewww_memory = 'plugin load: ' . memory_get_usage( true ) . "\n";
 }
-
-$ewww_debug .= 'ABSPATH: ' . ABSPATH . '<br>';
-$ewww_debug .= 'home url: ' . get_home_url() . '<br>';
-$ewww_debug .= 'site url: ' . get_site_url() . '<br>';
 
 // setup custom $wpdb attribute for our image-tracking table
 global $wpdb;
@@ -569,7 +565,7 @@ function ewww_image_optimizer_admin_init() {
 	// setup scheduled optimization if the user has enabled it, and it isn't already scheduled
 	if (ewww_image_optimizer_get_option('ewww_image_optimizer_auto') == TRUE && !wp_next_scheduled('ewww_image_optimizer_auto')) {
 		$ewww_debug .= "scheduling auto-optimization<br>";
-		wp_schedule_event(time(), 'hourly', 'ewww_image_optimizer_auto');
+		wp_schedule_event( time(), apply_filters( 'ewww_image_optimizer_schedule', 'hourly' ), 'ewww_image_optimizer_auto' );
 	} elseif (ewww_image_optimizer_get_option('ewww_image_optimizer_auto') == TRUE) {
 		$ewww_debug .= "auto-optimization already scheduled: " . wp_next_scheduled('ewww_image_optimizer_auto') . "<br>";
 	} elseif (wp_next_scheduled('ewww_image_optimizer_auto')) {
@@ -2776,9 +2772,12 @@ function ewww_image_optimizer_get_image_sizes() {
 
 // displays the EWWW IO options and provides one-click install for the optimizer utilities
 function ewww_image_optimizer_options () {
-	// TODO: output options to debugging
 	global $ewww_debug;
 	$ewww_debug .= '<b>ewww_image_optimizer_options()</b><br>';
+	$ewww_debug .= 'ABSPATH: ' . ABSPATH . '<br>';
+	$ewww_debug .= 'home url: ' . get_home_url() . '<br>';
+	$ewww_debug .= 'site url: ' . get_site_url() . '<br>';
+
 	$output = array();
 	if (isset($_REQUEST['ewww_pngout'])) {
 		if ($_REQUEST['ewww_pngout'] == 'success') {
@@ -3095,7 +3094,7 @@ function ewww_image_optimizer_options () {
 				$output[] = "<tr><th><label for='ewww_image_optimizer_aux_paths'>" . __('Folders to optimize', EWWW_IMAGE_OPTIMIZER_DOMAIN) . "</label></th><td>" . sprintf(__('One path per line, must be within %s. Use full paths, not relative paths.', EWWW_IMAGE_OPTIMIZER_DOMAIN), ABSPATH) . "<br>\n";
 				$output[] = "<textarea id='ewww_image_optimizer_aux_paths' name='ewww_image_optimizer_aux_paths' rows='3' cols='60'>" . ( ( $aux_paths = ewww_image_optimizer_get_option( 'ewww_image_optimizer_aux_paths' ) ) ? implode( "\n", $aux_paths ) : "" ) . "</textarea>\n";
 				$output[] = "<p class='description'>" . __( 'Provide paths containing images to be optimized using "Scan and Optimize" on the Bulk Optimize page or by Scheduled Optimization.', EWWW_IMAGE_OPTIMIZER_DOMAIN ) . "</p></td></tr>\n";
-				$ewww_debug .= "folders to optimize:<br>" . implode( "<br>", $aux_paths ) . "<br>";
+				$ewww_debug .= "folders to optimize:<br>" . ( ( $aux_paths = ewww_image_optimizer_get_option( 'ewww_image_optimizer_aux_paths' ) ) ? implode( "\n", $aux_paths ) : "" ) . "<br>";
 				$output[] = "<tr><th><label for='ewww_image_optimizer_noauto'>" . __('Disable Automatic Optimization', EWWW_IMAGE_OPTIMIZER_DOMAIN) . "</label></th><td><input type='checkbox' id='ewww_image_optimizer_noauto' name='ewww_image_optimizer_noauto' value='true' " . ( ewww_image_optimizer_get_option('ewww_image_optimizer_noauto') == TRUE ? "checked='true'" : "" ) . " /> " . __('Images will not be optimized on upload. Images may be optimized with the Bulk Optimize tools or with Scheduled optimization.', EWWW_IMAGE_OPTIMIZER_DOMAIN) . "</td></tr>\n";
 				$ewww_debug .= "disable auto-optimization: " . ( ewww_image_optimizer_get_option('ewww_image_optimizer_noauto') == TRUE ? "on" : "off" ) . "<br>";
 				$output[] = "<tr><th><label for='ewww_image_optimizer_include_media_paths'>" . __('Include Media Library Folders', EWWW_IMAGE_OPTIMIZER_DOMAIN) . "</label></th><td><input type='checkbox' id='ewww_image_optimizer_include_media_paths' name='ewww_image_optimizer_include_media_paths' value='true' " . ( ewww_image_optimizer_get_option('ewww_image_optimizer_include_media_paths') == TRUE ? "checked='true'" : "" ) . " /> " . __('If you have disabled automatic optimization, enable this if you want Scheduled Optimization to include the latest two folders from the Media Library.', EWWW_IMAGE_OPTIMIZER_DOMAIN) . "</td></tr>\n";

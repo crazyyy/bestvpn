@@ -10,9 +10,7 @@ new Responsive_Lightbox_Frontend();
  * @class Responsive_Lightbox_Frontend
  */
 class Responsive_Lightbox_Frontend {
-	
-	private $options = array();
-	private $defaults = array();
+
 	public $gallery_no = 0;
 
 	public function __construct() {
@@ -30,8 +28,8 @@ class Responsive_Lightbox_Frontend {
 	/**
 	 * Add lightbox to videos
 	 * 
-	 * @param mixed $content
-	 * @return mixed
+	 * @param 	mixed 	$content
+	 * @return 	mixed
 	 */
 	public function add_videos_lightbox_selector( $content ) {
 		
@@ -74,8 +72,8 @@ class Responsive_Lightbox_Frontend {
 	/**
 	 * Add lightbox to to image links
 	 * 
-	 * @param mixed $content
-	 * @return mixed
+	 * @param 	mixed 	$content
+	 * @return 	mixed
 	 */
 	public function add_links_lightbox_selector( $content ) {
 		
@@ -162,9 +160,9 @@ class Responsive_Lightbox_Frontend {
 	/**
 	 * Add lightbox to Jetpack tiled gallery
 	 * 
-	 * @param mixed $content
-	 * @param array $attr
-	 * @return mixed
+	 * @param 	mixed 	$content
+	 * @param 	array 	$attr
+	 * @return 	mixed
 	 */
 	public function add_custom_gallery_lightbox_selector( $content, $attr ) {
 		
@@ -205,9 +203,9 @@ class Responsive_Lightbox_Frontend {
 	/**
 	 * Get attachment title function
 	 * 
-	 * @param int $id
-	 * @param string $title_arg
-	 * @return string
+	 * @param 	int 	$id
+	 * @param 	string 	$title_arg
+	 * @return 	string
 	 */
 	public function get_attachment_title( $id, $title_arg ) {
 		
@@ -239,8 +237,8 @@ class Responsive_Lightbox_Frontend {
 	/**
 	 * Get attachment id by url function, adjusted to work cropped images
 	 * 
-	 * @param string $url
-	 * @return int
+	 * @param 	string 	$url
+	 * @return 	int
 	 */
 	public function get_attachment_id_by_url( $url ) {
 		$post_id = attachment_url_to_postid( $url );
@@ -265,8 +263,8 @@ class Responsive_Lightbox_Frontend {
 	/**
 	 * Helper: generate password without wp_rand() and DB call it uses
 	 * 
-	 * @param int $length
-	 * @return string
+	 * @param 	int 	$length
+	 * @return 	string
 	*/
 	private function generate_password( $length = 64 ) {
 		$chars = 'abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789';
@@ -282,9 +280,9 @@ class Responsive_Lightbox_Frontend {
 	/**
 	 * Helper: gallery number function
 	 * 
-	 * @param mixed $content
-	 * @param array $attr
-	 * @return mixed
+	 * @param 	mixed 	$content
+	 * @param 	array 	$attr
+	 * @return 	mixed
 	 */
 	public function gallery_attributes( $content, $attr ) {
 

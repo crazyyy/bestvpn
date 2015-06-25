@@ -4,7 +4,7 @@ Donate link: http://www.dfactory.eu/
 Tags: gallery, images, lightbox, links, photos, template, theme, photo, image, picture, slideshow, modal, overlay, YouTube, Vimeo, video, videos
 Requires at least: 4.0
 Tested up to: 4.2.2
-Stable tag: 1.5.6
+Stable tag: 1.5.7
 License: MIT License
 License URI: http://opensource.org/licenses/MIT
 
@@ -45,6 +45,7 @@ For more information, check out plugin page at [dFactory](http://www.dfactory.eu
 * Japanese - by stranger-jp
 * Persian - by [Ali Mirzaei](http://alimir.ir/)
 * Polish - by Bartosz Arendt
+* Romanian - by [Victor Chiritoiu](http://contacter.ro)
 * Russian - by [Konstantin](http://l-konstantin.ru)
 * Serbo-Croatian - by [Borisa Djuraskovic](http://www.webhostinghub.com/)
 * Slovak - by [Patrik Zec](http://patwist.com)
@@ -67,6 +68,12 @@ No questions yet.
 2. screenshot-2.jpg
 
 == Changelog ==
+
+= 1.5.7 =
+* New: Romanian translation, thanks to [Victor Chiritoiu](http://contacter.ro)
+* Fix: Tos "R" Us pagination thumbnails and pause on hover settings not working
+* Tweak: Scripts and styles versioning, for better cache handling
+* Tweak: French translation updated
 
 = 1.5.6 =
 * New: Option to conditionally load scripts and styles only on pages that have images or galleries in post content.
@@ -230,5 +237,7 @@ Initial release
 
 == Upgrade Notice ==
 
-= 1.5.6 =
-* New: Option to conditionally load scripts and styles only on pages that have images or galleries in post content.
+= 1.5.7 =
+* New: Romanian translation, thanks to [Victor Chiritoiu](http://contacter.ro)
+* Fix: Tos "R" Us pagination thumbnails and pause on hover settings not working
+* Tweak: Scripts and styles versioning, for better cache handling

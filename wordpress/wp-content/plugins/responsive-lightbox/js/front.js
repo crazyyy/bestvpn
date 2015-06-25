@@ -205,7 +205,7 @@
 							infinite			: ( rlArgs.infinite === '1' ? true : false ),
 							autoplay				: {
 								play				: ( rlArgs.autoplay === '1' ? true : false ),
-								pauseOnHover		: ( rlArgs.pause_on_hover === '1' ? true : false ),
+								pauseOnHover		: ( rlArgs.pauseOnHover === '1' ? true : false ),
 								timeout 			: rlArgs.timeout
 							},
 							effect					: rlArgs.effect,
@@ -216,7 +216,7 @@
 							},
 							pagination				: {
 								add						: ( rlArgs.pagination === '1' ? true : false ),
-								type					: rlArgs.pagination_type
+								type					: rlArgs.paginationType
 							},
 							// forced
 							show					: false,

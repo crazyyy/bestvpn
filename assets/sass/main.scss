@@ -972,7 +972,7 @@ table {
     }
   }
   .footer {
-/*     position: absolute;
+    /*     position: absolute;
 z-index: 20; */
     .copytext {
       width: 180px;
@@ -1772,11 +1772,16 @@ table.summary_table {
   }
 }
 
-.post_content a img {
+.post_content {
+ @extend .clearfix;
+  a {
+    img {
   margin-top: 5px;
   padding: 7px;
 
   background: url('../img/border-bg.png');
+}
+  }
 }
 
 #the_process {
@@ -2201,16 +2206,23 @@ a {
   .vpn_bar {
     background: #222127;
     .logo {
+      overflow: hidden;
+
+      width: 113px;
+      height: 68px;
+      margin: 0 auto;
+
       text-align: center;
       a {
         display: block;
-        margin: 0 auto;
+        overflow: hidden;
+
         width: 113px;
         height: 68px;
-        overflow: hidden;
-        img {
-          width: 100%;
-        }
+        margin: 0 auto;
+      }
+      img {
+        width: 100%;
       }
     }
     .menu {
@@ -2308,8 +2320,9 @@ a {
 }
 
 .footer {
-  background: #48474d;
   margin: 0 auto;
+
+  background: #48474d;
   .copytext {
     div {
       font-size: .8em;
@@ -2318,6 +2331,29 @@ a {
     }
     a {
       color: #9f9da3;
+    }
+  }
+  .footernav {
+    list-style: none;
+    li {
+      position: relative;
+
+      display: inline-block;
+
+      padding: 0 7px 0 6px;
+
+      list-style: none;
+      &:after {
+        position: absolute;
+        right: 0;
+
+        content: '|';
+      }
+      &:last-child {
+        &:after {
+          display: none;
+        }
+      }
     }
   }
 }
