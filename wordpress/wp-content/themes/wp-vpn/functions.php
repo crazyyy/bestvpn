@@ -651,4 +651,55 @@ function top_level_cats_remove_cat_base($link)
     return preg_replace('|' . $category_base . '|', '', $link, 1);
 }
 
+
+add_action( 'init', 'register_cpt_servers' );
+function register_cpt_servers() {
+    $labels = array(
+        'name' => _x( 'Server', 'servers' ),
+        'singular_name' => _x( 'servers', 'servers' ),
+        'add_new' => _x( 'Add New', 'servers' ),
+        'add_new_item' => _x( 'Add New servers', 'servers' ),
+        'edit_item' => _x( 'Edit server', 'servers' ),
+        'new_item' => _x( 'New server', 'servers' ),
+        'view_item' => _x( 'View server', 'servers' ),
+        'search_items' => _x( 'Search server', 'servers' ),
+        'not_found' => _x( 'No servers found', 'servers' ),
+        'not_found_in_trash' => _x( 'No servers found in Trash', 'servers' ),
+        'parent_item_colon' => _x( 'Parent servers:', 'servers' ),
+        'menu_name' => _x( 'Servers', 'servers' ),
+    );
+    $args = array(
+        'labels' => $labels,
+        'hierarchical' => true,
+
+        'supports' => array( 'title', 'editor', 'author', 'thumbnail', 'revisions' ),
+        'taxonomies' => array( 'post_tag' ),
+        'public' => true,
+        'show_ui' => true,
+        'show_in_menu' => true,
+        'menu_position' => 5,
+
+        'show_in_nav_menus' => true,
+        'publicly_queryable' => true,
+        'exclude_from_search' => false,
+        'has_archive' => true,
+        'query_var' => true,
+        'can_export' => true,
+        'rewrite' => true,
+        'capability_type' => 'page'
+    );
+    register_post_type( 'servers', $args );
+}
+
+
+
+
+
+
+
+
+
+
+
+
 ?>
