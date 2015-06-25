@@ -1044,8 +1044,6 @@ z-index: 20; */
 
 .single_sidebar {
   max-width: 260px;
-
-  background: #fff;
   h3 {
     font-size: 1.1em;
     font-weight: normal;
@@ -1773,14 +1771,14 @@ table.summary_table {
 }
 
 .post_content {
- @extend .clearfix;
+  @extend .clearfix;
   a {
     img {
-  margin-top: 5px;
-  padding: 7px;
+      margin-top: 5px;
+      padding: 7px;
 
-  background: url('../img/border-bg.png');
-}
+      background: url('../img/border-bg.png');
+    }
   }
 }
 
@@ -2087,9 +2085,45 @@ img {
   }
   .single_sidebar_wrapper {
     width: 300px;
+
+    @extend .clearfix;
     .single_sidebar {
+      float: right;
+
       margin: 0;
       padding: 0;
+      .widget {
+        margin: 0 0 20px;
+        padding: 20px 15px;
+
+        background-color: #fff;
+        ul {
+          font-size: .7em;
+
+          padding: 0;
+          li {
+            a {
+              text-decoration: none;
+            }
+            .post-date {
+              display: block;
+
+              margin-top: 4px;
+
+              color: #7a7880;
+            }
+          }
+        }
+      }
+      h6 {
+        font-size: 1.5em;
+        font-weight: 700;
+
+        margin: 0 0 10px;
+        padding: 0;
+
+        text-align: center;
+      }
     }
   }
 }
@@ -2374,7 +2408,7 @@ a {
 }
 
 .loop_wrapper {
-  margin: 0 -10px 0 20px;
+  margin: 0;
   padding-bottom: 70px;
   .post {
     margin: 0;
@@ -2452,11 +2486,12 @@ a {
     }
   }
   .navigation {
-    position: absolute;
-
+    /*     position: absolute; */
     width: 100%;
-    .prev-post,
-    .next-post {
+    text-align: center;
+    .page-numbers,
+    .prev,
+    .next {
       display: inline-block;
 
       margin: 5px 0;
@@ -2474,15 +2509,14 @@ a {
       background: #f64046;
       background-clip: padding-box !important;
       text-shadow: 1px 1px 1px #414044;
+      &:hover {
+        color: #fff;
+      }
     }
-    .prev-post:hover,
-    .next-post:hover {
-      color: #fff;
-    }
-    .prev-post {
+    .prev {
       float: left;
     }
-    .next-post {
+    .next {
       float: right;
     }
   }

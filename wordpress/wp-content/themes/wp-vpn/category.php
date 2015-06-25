@@ -24,7 +24,7 @@
       <div class="info"><?php the_time('j F Y'); ?> | <?php the_author_posts_link(); ?>
       </div>
       <div class="post_content">
-        Since we last updated this article in March, we have learned of China’s new Social Credit System. Under this terrifying scheme, all of China’s 1.3 billion citizens will be awarded a ‘citizen score’ based on a variety of variety of criteria, such as financial history, criminal record, and online...
+        <?php wpeExcerpt('wpeExcerpt40'); ?>
         <a href="<?php the_permalink(); ?>" class="more-link">
           <img src="<?php echo get_template_directory_uri(); ?>/img/readmore.png" alt="Read more" style="background: none">
         </a>
@@ -38,7 +38,7 @@
 
   </div><!-- /article -->
 <?php endif; ?>
-
+  <div class="clearfix"></div>
   <?php get_template_part('pagination'); ?>
 </div><!-- loop_wrapper -->
 <?php get_footer(); ?>
