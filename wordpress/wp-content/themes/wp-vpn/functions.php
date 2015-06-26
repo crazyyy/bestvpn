@@ -45,14 +45,14 @@ function wpeHeaderScripts() {
   }
 }
 
-//  Remove wp_head() injected Recent Comment styles
-function my_remove_recent_comments_style() {
-  global $wp_widget_factory;
-  remove_action('wp_head', array(
-    $wp_widget_factory->widgets['WP_Widget_Recent_Comments'],
-    'recent_comments_style'
-  ));
-}
+// //  Remove wp_head() injected Recent Comment styles
+// function my_remove_recent_comments_style() {
+//   global $wp_widget_factory;
+//   remove_action('wp_head', array(
+//     $wp_widget_factory->widgets['WP_Widget_Recent_Comments'],
+//     'recent_comments_style'
+//   ));
+// }
 
 /*------------------------------------*\
     Theme Support
@@ -316,7 +316,7 @@ add_action('init', 'wpeHeaderScripts'); // Add Scripts to wp_head
 add_action('wp_enqueue_scripts', 'wpeStyles'); // Add Theme Stylesheet
 add_action('get_header', 'enable_threaded_comments'); // Enable Threaded Comments
 add_action('init', 'register_html5_menu'); // Add HTML5 Blank Menu
-add_action('widgets_init', 'my_remove_recent_comments_style'); // Remove inline Recent Comment Styles from wp_head()
+// add_action('widgets_init', 'my_remove_recent_comments_style'); // Remove inline Recent Comment Styles from wp_head()
 add_action('init', 'html5wp_pagination'); // Add our HTML5 Pagination
 
 // Remove Actions
@@ -367,246 +367,246 @@ remove_filter('the_excerpt', 'wpautop'); // Remove <p> tags from Excerpt altoget
 }
 add_filter( 'comments_open', 'filter_media_comment_status', 10 , 2 );
 
- // Редирект записи, когда поисковый запрос выдает один результат
- // http://wordpresso.org/hacks/29-wordpress-tryukov-dlya-rabotyi-s-zapisyami-i-stranitsami/
-add_action('template_redirect', 'single_result');
-function single_result() {
-  if (is_search()) {
-    global $wp_query;
-    if ($wp_query->post_count == 1) {
-      wp_redirect( get_permalink( $wp_query->posts['0']->ID ) );
-    }
-  }
-}
+//  // Редирект записи, когда поисковый запрос выдает один результат
+//  // http://wordpresso.org/hacks/29-wordpress-tryukov-dlya-rabotyi-s-zapisyami-i-stranitsami/
+// add_action('template_redirect', 'single_result');
+// function single_result() {
+//   if (is_search()) {
+//     global $wp_query;
+//     if ($wp_query->post_count == 1) {
+//       wp_redirect( get_permalink( $wp_query->posts['0']->ID ) );
+//     }
+//   }
+// }
 
-// хлебные крошки   http://dimox.name/wordpress-breadcrumbs-without-a-plugin/
-// < ?php if (function_exists('dimox_breadcrumbs')) dimox_breadcrumbs(); ? >
-//
-function dimox_breadcrumbs() {
-    /* === ОПЦИИ === */
-    $text['home'] = 'Главная'; // текст ссылки "Главная"
-    $text['category'] = 'Архив рубрики "%s"'; // текст для страницы рубрики
-    $text['search'] = 'Результаты поиска по запросу "%s"'; // текст для страницы с результатами поиска
-    $text['tag'] = 'Записи с тегом "%s"'; // текст для страницы тега
-    $text['author'] = 'Статьи автора %s'; // текст для страницы автора
-    $text['404'] = 'Ошибка 404'; // текст для страницы 404
+// // хлебные крошки   http://dimox.name/wordpress-breadcrumbs-without-a-plugin/
+// // < ?php if (function_exists('dimox_breadcrumbs')) dimox_breadcrumbs(); ? >
+// //
+// function dimox_breadcrumbs() {
+//     /* === ОПЦИИ === */
+//     $text['home'] = 'Главная'; // текст ссылки "Главная"
+//     $text['category'] = 'Архив рубрики "%s"'; // текст для страницы рубрики
+//     $text['search'] = 'Результаты поиска по запросу "%s"'; // текст для страницы с результатами поиска
+//     $text['tag'] = 'Записи с тегом "%s"'; // текст для страницы тега
+//     $text['author'] = 'Статьи автора %s'; // текст для страницы автора
+//     $text['404'] = 'Ошибка 404'; // текст для страницы 404
 
-    $show_current = 1; // 1 - показывать название текущей статьи/страницы/рубрики, 0 - не показывать
-    $show_on_home = 0; // 1 - показывать "хлебные крошки" на главной странице, 0 - не показывать
-    $show_home_link = 1; // 1 - показывать ссылку "Главная", 0 - не показывать
-    $show_title = 1; // 1 - показывать подсказку (title) для ссылок, 0 - не показывать
-    $delimiter = ' &raquo; '; // разделить между "крошками"
-    $before = '<span class="current">'; // тег перед текущей "крошкой"
-    $after = '</span>'; // тег после текущей "крошки"
-    /* === КОНЕЦ ОПЦИЙ === */
+//     $show_current = 1; // 1 - показывать название текущей статьи/страницы/рубрики, 0 - не показывать
+//     $show_on_home = 0; // 1 - показывать "хлебные крошки" на главной странице, 0 - не показывать
+//     $show_home_link = 1; // 1 - показывать ссылку "Главная", 0 - не показывать
+//     $show_title = 1; // 1 - показывать подсказку (title) для ссылок, 0 - не показывать
+//     $delimiter = ' &raquo; '; // разделить между "крошками"
+//     $before = '<span class="current">'; // тег перед текущей "крошкой"
+//     $after = '</span>'; // тег после текущей "крошки"
+//     /* === КОНЕЦ ОПЦИЙ === */
 
-    global $post;
-    $home_link = home_url('/');
-    $link_before = '<span typeof="v:Breadcrumb">';
-    $link_after = '</span>';
-    $link_attr = ' rel="v:url" property="v:title"';
-    $link = $link_before . '<a' . $link_attr . ' href="%1$s">%2$s</a>' . $link_after;
-    $parent_id = $parent_id_2 = $post->post_parent;
-    $frontpage_id = get_option('page_on_front');
+//     global $post;
+//     $home_link = home_url('/');
+//     $link_before = '<span typeof="v:Breadcrumb">';
+//     $link_after = '</span>';
+//     $link_attr = ' rel="v:url" property="v:title"';
+//     $link = $link_before . '<a' . $link_attr . ' href="%1$s">%2$s</a>' . $link_after;
+//     $parent_id = $parent_id_2 = $post->post_parent;
+//     $frontpage_id = get_option('page_on_front');
 
-    if (is_home() || is_front_page()) {
+//     if (is_home() || is_front_page()) {
 
-        if ($show_on_home == 1) echo '<div class="breadcrumbs"><a href="' . $home_link . '">' . $text['home'] . '</a></div>';
+//         if ($show_on_home == 1) echo '<div class="breadcrumbs"><a href="' . $home_link . '">' . $text['home'] . '</a></div>';
 
-    } else {
+//     } else {
 
-        echo '<div class="breadcrumbs" xmlns:v="http://rdf.data-vocabulary.org/#">';
-        if ($show_home_link == 1) {
-            echo '<a href="' . $home_link . '" rel="v:url" property="v:title">' . $text['home'] . '</a>';
-            if ($frontpage_id == 0 || $parent_id != $frontpage_id) echo $delimiter;
-        }
+//         echo '<div class="breadcrumbs" xmlns:v="http://rdf.data-vocabulary.org/#">';
+//         if ($show_home_link == 1) {
+//             echo '<a href="' . $home_link . '" rel="v:url" property="v:title">' . $text['home'] . '</a>';
+//             if ($frontpage_id == 0 || $parent_id != $frontpage_id) echo $delimiter;
+//         }
 
-        if ( is_category() ) {
-            $this_cat = get_category(get_query_var('cat'), false);
-            if ($this_cat->parent != 0) {
-                $cats = get_category_parents($this_cat->parent, TRUE, $delimiter);
-                if ($show_current == 0) $cats = preg_replace("#^(.+)$delimiter$#", "$1", $cats);
-                $cats = str_replace('<a', $link_before . '<a' . $link_attr, $cats);
-                $cats = str_replace('</a>', '</a>' . $link_after, $cats);
-                if ($show_title == 0) $cats = preg_replace('/ title="(.*?)"/', '', $cats);
-                echo $cats;
-            }
-            if ($show_current == 1) echo $before . sprintf($text['category'], single_cat_title('', false)) . $after;
+//         if ( is_category() ) {
+//             $this_cat = get_category(get_query_var('cat'), false);
+//             if ($this_cat->parent != 0) {
+//                 $cats = get_category_parents($this_cat->parent, TRUE, $delimiter);
+//                 if ($show_current == 0) $cats = preg_replace("#^(.+)$delimiter$#", "$1", $cats);
+//                 $cats = str_replace('<a', $link_before . '<a' . $link_attr, $cats);
+//                 $cats = str_replace('</a>', '</a>' . $link_after, $cats);
+//                 if ($show_title == 0) $cats = preg_replace('/ title="(.*?)"/', '', $cats);
+//                 echo $cats;
+//             }
+//             if ($show_current == 1) echo $before . sprintf($text['category'], single_cat_title('', false)) . $after;
 
-        } elseif ( is_search() ) {
-            echo $before . sprintf($text['search'], get_search_query()) . $after;
+//         } elseif ( is_search() ) {
+//             echo $before . sprintf($text['search'], get_search_query()) . $after;
 
-        } elseif ( is_day() ) {
-            echo sprintf($link, get_year_link(get_the_time('Y')), get_the_time('Y')) . $delimiter;
-            echo sprintf($link, get_month_link(get_the_time('Y'),get_the_time('m')), get_the_time('F')) . $delimiter;
-            echo $before . get_the_time('d') . $after;
+//         } elseif ( is_day() ) {
+//             echo sprintf($link, get_year_link(get_the_time('Y')), get_the_time('Y')) . $delimiter;
+//             echo sprintf($link, get_month_link(get_the_time('Y'),get_the_time('m')), get_the_time('F')) . $delimiter;
+//             echo $before . get_the_time('d') . $after;
 
-        } elseif ( is_month() ) {
-            echo sprintf($link, get_year_link(get_the_time('Y')), get_the_time('Y')) . $delimiter;
-            echo $before . get_the_time('F') . $after;
+//         } elseif ( is_month() ) {
+//             echo sprintf($link, get_year_link(get_the_time('Y')), get_the_time('Y')) . $delimiter;
+//             echo $before . get_the_time('F') . $after;
 
-        } elseif ( is_year() ) {
-            echo $before . get_the_time('Y') . $after;
+//         } elseif ( is_year() ) {
+//             echo $before . get_the_time('Y') . $after;
 
-        } elseif ( is_single() && !is_attachment() ) {
-            if ( get_post_type() != 'post' ) {
-                $post_type = get_post_type_object(get_post_type());
-                $slug = $post_type->rewrite;
-                printf($link, $home_link . '/' . $slug['slug'] . '/', $post_type->labels->singular_name);
-                if ($show_current == 1) echo $delimiter . $before . get_the_title() . $after;
-            } else {
-                $cat = get_the_category(); $cat = $cat[0];
-                $cats = get_category_parents($cat, TRUE, $delimiter);
-                if ($show_current == 0) $cats = preg_replace("#^(.+)$delimiter$#", "$1", $cats);
-                $cats = str_replace('<a', $link_before . '<a' . $link_attr, $cats);
-                $cats = str_replace('</a>', '</a>' . $link_after, $cats);
-                if ($show_title == 0) $cats = preg_replace('/ title="(.*?)"/', '', $cats);
-                echo $cats;
-                if ($show_current == 1) echo $before . get_the_title() . $after;
-            }
+//         } elseif ( is_single() && !is_attachment() ) {
+//             if ( get_post_type() != 'post' ) {
+//                 $post_type = get_post_type_object(get_post_type());
+//                 $slug = $post_type->rewrite;
+//                 printf($link, $home_link . '/' . $slug['slug'] . '/', $post_type->labels->singular_name);
+//                 if ($show_current == 1) echo $delimiter . $before . get_the_title() . $after;
+//             } else {
+//                 $cat = get_the_category(); $cat = $cat[0];
+//                 $cats = get_category_parents($cat, TRUE, $delimiter);
+//                 if ($show_current == 0) $cats = preg_replace("#^(.+)$delimiter$#", "$1", $cats);
+//                 $cats = str_replace('<a', $link_before . '<a' . $link_attr, $cats);
+//                 $cats = str_replace('</a>', '</a>' . $link_after, $cats);
+//                 if ($show_title == 0) $cats = preg_replace('/ title="(.*?)"/', '', $cats);
+//                 echo $cats;
+//                 if ($show_current == 1) echo $before . get_the_title() . $after;
+//             }
 
-        } elseif ( !is_single() && !is_page() && get_post_type() != 'post' && !is_404() ) {
-            $post_type = get_post_type_object(get_post_type());
-            echo $before . $post_type->labels->singular_name . $after;
+//         } elseif ( !is_single() && !is_page() && get_post_type() != 'post' && !is_404() ) {
+//             $post_type = get_post_type_object(get_post_type());
+//             echo $before . $post_type->labels->singular_name . $after;
 
-        } elseif ( is_attachment() ) {
-            $parent = get_post($parent_id);
-            $cat = get_the_category($parent->ID); $cat = $cat[0];
-            $cats = get_category_parents($cat, TRUE, $delimiter);
-            $cats = str_replace('<a', $link_before . '<a' . $link_attr, $cats);
-            $cats = str_replace('</a>', '</a>' . $link_after, $cats);
-            if ($show_title == 0) $cats = preg_replace('/ title="(.*?)"/', '', $cats);
-            echo $cats;
-            printf($link, get_permalink($parent), $parent->post_title);
-            if ($show_current == 1) echo $delimiter . $before . get_the_title() . $after;
+//         } elseif ( is_attachment() ) {
+//             $parent = get_post($parent_id);
+//             $cat = get_the_category($parent->ID); $cat = $cat[0];
+//             $cats = get_category_parents($cat, TRUE, $delimiter);
+//             $cats = str_replace('<a', $link_before . '<a' . $link_attr, $cats);
+//             $cats = str_replace('</a>', '</a>' . $link_after, $cats);
+//             if ($show_title == 0) $cats = preg_replace('/ title="(.*?)"/', '', $cats);
+//             echo $cats;
+//             printf($link, get_permalink($parent), $parent->post_title);
+//             if ($show_current == 1) echo $delimiter . $before . get_the_title() . $after;
 
-        } elseif ( is_page() && !$parent_id ) {
-            if ($show_current == 1) echo $before . get_the_title() . $after;
+//         } elseif ( is_page() && !$parent_id ) {
+//             if ($show_current == 1) echo $before . get_the_title() . $after;
 
-        } elseif ( is_page() && $parent_id ) {
-            if ($parent_id != $frontpage_id) {
-                $breadcrumbs = array();
-                while ($parent_id) {
-                    $page = get_page($parent_id);
-                    if ($parent_id != $frontpage_id) {
-                        $breadcrumbs[] = sprintf($link, get_permalink($page->ID), get_the_title($page->ID));
-                    }
-                    $parent_id = $page->post_parent;
-                }
-                $breadcrumbs = array_reverse($breadcrumbs);
-                for ($i = 0; $i < count($breadcrumbs); $i++) {
-                    echo $breadcrumbs[$i];
-                    if ($i != count($breadcrumbs)-1) echo $delimiter;
-                }
-            }
-            if ($show_current == 1) {
-                if ($show_home_link == 1 || ($parent_id_2 != 0 && $parent_id_2 != $frontpage_id)) echo $delimiter;
-                echo $before . get_the_title() . $after;
-            }
+//         } elseif ( is_page() && $parent_id ) {
+//             if ($parent_id != $frontpage_id) {
+//                 $breadcrumbs = array();
+//                 while ($parent_id) {
+//                     $page = get_page($parent_id);
+//                     if ($parent_id != $frontpage_id) {
+//                         $breadcrumbs[] = sprintf($link, get_permalink($page->ID), get_the_title($page->ID));
+//                     }
+//                     $parent_id = $page->post_parent;
+//                 }
+//                 $breadcrumbs = array_reverse($breadcrumbs);
+//                 for ($i = 0; $i < count($breadcrumbs); $i++) {
+//                     echo $breadcrumbs[$i];
+//                     if ($i != count($breadcrumbs)-1) echo $delimiter;
+//                 }
+//             }
+//             if ($show_current == 1) {
+//                 if ($show_home_link == 1 || ($parent_id_2 != 0 && $parent_id_2 != $frontpage_id)) echo $delimiter;
+//                 echo $before . get_the_title() . $after;
+//             }
 
-        } elseif ( is_tag() ) {
-            echo $before . sprintf($text['tag'], single_tag_title('', false)) . $after;
+//         } elseif ( is_tag() ) {
+//             echo $before . sprintf($text['tag'], single_tag_title('', false)) . $after;
 
-        } elseif ( is_author() ) {
-            global $author;
-            $userdata = get_userdata($author);
-            echo $before . sprintf($text['author'], $userdata->display_name) . $after;
+//         } elseif ( is_author() ) {
+//             global $author;
+//             $userdata = get_userdata($author);
+//             echo $before . sprintf($text['author'], $userdata->display_name) . $after;
 
-        } elseif ( is_404() ) {
-            echo $before . $text['404'] . $after;
-        }
+//         } elseif ( is_404() ) {
+//             echo $before . $text['404'] . $after;
+//         }
 
-        if ( get_query_var('paged') ) {
-            if ( is_category() || is_day() || is_month() || is_year() || is_search() || is_tag() || is_author() ) echo ' (';
-            echo __('Page') . ' ' . get_query_var('paged');
-            if ( is_category() || is_day() || is_month() || is_year() || is_search() || is_tag() || is_author() ) echo ')';
-        }
+//         if ( get_query_var('paged') ) {
+//             if ( is_category() || is_day() || is_month() || is_year() || is_search() || is_tag() || is_author() ) echo ' (';
+//             echo __('Page') . ' ' . get_query_var('paged');
+//             if ( is_category() || is_day() || is_month() || is_year() || is_search() || is_tag() || is_author() ) echo ')';
+//         }
 
-        echo '</div><!-- .breadcrumbs -->';
+//         echo '</div><!-- .breadcrumbs -->';
 
-    }
-} // end dimox_breadcrumbs()
+//     }
+// } // end dimox_breadcrumbs()
 
-/*
-  Plugin Name: Top Level Categories
-  Plugin URI: http://fortes.com/projects/wordpress/top-level-cats/
-  Description: Removes the prefix from the URL for a category. For instance, if your old category link was <code>/category/catname</code> it will now be <code>/catname</code>
-*/
+// /*
+//   Plugin Name: Top Level Categories
+//   Plugin URI: http://fortes.com/projects/wordpress/top-level-cats/
+//   Description: Removes the prefix from the URL for a category. For instance, if your old category link was <code>/category/catname</code> it will now be <code>/catname</code>
+// */
 
-// In case we're running standalone, for some odd reason
-if (function_exists('add_action'))
-{
-    register_activation_hook(__FILE__, 'top_level_cats_activate');
-    register_deactivation_hook(__FILE__, 'top_level_cats_deactivate');
+// // In case we're running standalone, for some odd reason
+// if (function_exists('add_action'))
+// {
+//     register_activation_hook(__FILE__, 'top_level_cats_activate');
+//     register_deactivation_hook(__FILE__, 'top_level_cats_deactivate');
 
-    // Setup filters
-    add_filter('category_rewrite_rules', 'top_level_cats_category_rewrite_rules');
-    add_filter('generate_rewrite_rules', 'top_level_cats_generate_rewrite_rules');
-    add_filter('category_link', 'top_level_cats_category_link', 10, 2);
+//     // Setup filters
+//     add_filter('category_rewrite_rules', 'top_level_cats_category_rewrite_rules');
+//     add_filter('generate_rewrite_rules', 'top_level_cats_generate_rewrite_rules');
+//     add_filter('category_link', 'top_level_cats_category_link', 10, 2);
 
-    global $clean_category_rewrites, $clean_rewrites;
-    $clean_category_rewrites = array();
-}
-function top_level_cats_activate()
-{
-    global $wp_rewrite;
-    $wp_rewrite->flush_rules();
-}
-function top_level_cats_deactivate()
-{
-    // Remove the filters so we don't regenerate the wrong rules when we flush
-    remove_filter('category_rewrite_rules', 'top_level_cats_category_rewrite_rules');
-    remove_filter('generate_rewrite_rules', 'top_level_cats_generate_rewrite_rules');
-    remove_filter('category_link', 'top_level_cats_category_link');
+//     global $clean_category_rewrites, $clean_rewrites;
+//     $clean_category_rewrites = array();
+// }
+// function top_level_cats_activate()
+// {
+//     global $wp_rewrite;
+//     $wp_rewrite->flush_rules();
+// }
+// function top_level_cats_deactivate()
+// {
+//     // Remove the filters so we don't regenerate the wrong rules when we flush
+//     remove_filter('category_rewrite_rules', 'top_level_cats_category_rewrite_rules');
+//     remove_filter('generate_rewrite_rules', 'top_level_cats_generate_rewrite_rules');
+//     remove_filter('category_link', 'top_level_cats_category_link');
 
-    global $wp_rewrite;
-    $wp_rewrite->flush_rules();
-}
-function top_level_cats_generate_rewrite_rules($wp_rewrite)
-{
-    global $clean_category_rewrites;
-    $wp_rewrite->rules = $wp_rewrite->rules + $clean_category_rewrites;
-}
+//     global $wp_rewrite;
+//     $wp_rewrite->flush_rules();
+// }
+// function top_level_cats_generate_rewrite_rules($wp_rewrite)
+// {
+//     global $clean_category_rewrites;
+//     $wp_rewrite->rules = $wp_rewrite->rules + $clean_category_rewrites;
+// }
 
-function top_level_cats_category_rewrite_rules($category_rewrite)
-{
-    global $clean_category_rewrites;
+// function top_level_cats_category_rewrite_rules($category_rewrite)
+// {
+//     global $clean_category_rewrites;
 
-  global $wp_rewrite;
-  // Make sure to use verbose rules, otherwise we'll clobber our
-  // category permalinks with page permalinks
-  $wp_rewrite->use_verbose_page_rules = true;
+//   global $wp_rewrite;
+//   // Make sure to use verbose rules, otherwise we'll clobber our
+//   // category permalinks with page permalinks
+//   $wp_rewrite->use_verbose_page_rules = true;
 
-    while (list($k, $v) = each($category_rewrite)) {
-        // Strip off the category prefix
-        $new_k = top_level_cats_remove_cat_base($k);
-        $clean_category_rewrites[$new_k] = $v;
-    }
+//     while (list($k, $v) = each($category_rewrite)) {
+//         // Strip off the category prefix
+//         $new_k = top_level_cats_remove_cat_base($k);
+//         $clean_category_rewrites[$new_k] = $v;
+//     }
 
-    return $category_rewrite;
-}
+//     return $category_rewrite;
+// }
 
-function top_level_cats_category_link($cat_link, $cat_id)
-{
-    return top_level_cats_remove_cat_base($cat_link);
-}
+// function top_level_cats_category_link($cat_link, $cat_id)
+// {
+//     return top_level_cats_remove_cat_base($cat_link);
+// }
 
-function top_level_cats_remove_cat_base($link)
-{
-    $category_base = get_option('category_base');
+// function top_level_cats_remove_cat_base($link)
+// {
+//     $category_base = get_option('category_base');
 
-    // WP uses "category/" as the default
-    if ($category_base == '')
-        $category_base = 'category';
+//     // WP uses "category/" as the default
+//     if ($category_base == '')
+//         $category_base = 'category';
 
-    // Remove initial slash, if there is one (we remove the trailing slash in the regex replacement and don't want to end up short a slash)
-    if (substr($category_base, 0, 1) == '/')
-        $category_base = substr($category_base, 1);
+//     // Remove initial slash, if there is one (we remove the trailing slash in the regex replacement and don't want to end up short a slash)
+//     if (substr($category_base, 0, 1) == '/')
+//         $category_base = substr($category_base, 1);
 
-    $category_base .= '/';
+//     $category_base .= '/';
 
-    return preg_replace('|' . $category_base . '|', '', $link, 1);
-}
+//     return preg_replace('|' . $category_base . '|', '', $link, 1);
+// }
 
 
 add_action( 'init', 'register_cpt_servers' );
