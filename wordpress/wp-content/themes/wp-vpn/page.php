@@ -9,15 +9,6 @@
 
           <?php the_content(); ?>
 
-
-          <div class="author_bottom" style="margin-bottom: 10px; width: 500px;">
-            <img style="margin: 5px; float: left;" src="./page_files/photo-1.jpg" alt="Author Picture">
-            <br>Written by <b>Douglas Crawford</b>I am a freelance writer, technology enthusiast and lover of life who enjoys spinning words and sharing knowledge for a living. Find me on <a href="https://plus.google.com/u/2/115695913224775068128?rel=author">Google+</a>
-          </div>
-
-          <br>
-          <br>
-
         </div><!-- post_content -->
       </div><!-- single_content -->
       <?php endwhile; else: // If 404 page error ?>
