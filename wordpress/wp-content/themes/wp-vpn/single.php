@@ -33,6 +33,7 @@
       </div><!-- author_bottom -->
 
       <div class="comment_wrapper">
+
         <?php if ( comments_open() || get_comments_number() ) {
             comments_template();
           } ?>

@@ -1144,6 +1144,55 @@ z-index: 20; */
       }
     }
   }
+  &.single_sidebar_servers {
+    background-color: #fff;
+  }
+  .bp-features-box {
+    margin: 0 15px;
+    padding: 18px 0;
+
+    border-bottom: 1px solid #ededed;
+    &.last {
+      border-bottom: none;
+    }
+    h3 {
+      min-height: 30px;
+      margin: 0;
+      padding: 2px 0 0 40px;
+
+      background-repeat: no-repeat;
+      background-position: top left;
+      &.icon1 {
+        background-image: url('../img/icon1.png');
+      }
+      &.icon2 {
+        background-image: url('../img/icon2.png');
+      }
+      &.icon3 {
+        background-image: url('../img/icon3.png');
+      }
+      &.icon4 {
+        background-image: url('../img/icon4.png');
+      }
+      &.icon5 {
+        background-image: url('../img/icon5.png');
+      }
+      &.icon6 {
+        background-image: url('../img/icon6.png');
+      }
+    }
+    ul {
+      margin: 15px 0 0 28px;
+      padding: 0;
+
+      list-style-image: url('../img/tick.png');
+      li {
+        font-size: .9em;
+
+        margin-bottom: 6px;
+      }
+    }
+  }
 }
 
 p .btn {
@@ -1431,7 +1480,12 @@ table.summary_table {
 }
 
 .review_head {
+  position: relative;
   .iconpic {
+    position: absolute;
+    top: 0;
+    left: 0;
+
     float: left;
 
     vertical-align: bottom;
@@ -1441,10 +1495,14 @@ table.summary_table {
 
     float: left;
 
-    margin: 6px 0 0 15px !important;
-    padding: 0 !important;
+    margin: 0;
+    padding: 10px 50px 0 !important;
   }
   .logopic {
+    position: absolute;
+    top: 0;
+    right: 0;
+
     width: auto;
     height: 41px;
 
@@ -1471,9 +1529,7 @@ table.summary_table {
 
       display: inline-block;
 
-      margin: 5px 0;
       margin: 0 auto;
-      padding: 8px 20px;
       padding: 10px 35px;
 
       text-align: center;
@@ -1495,6 +1551,8 @@ table.summary_table {
     ul.ratings {
       margin: 108px 19px 0 20px;
       li {
+        position: relative;
+
         display: block !important;
         float: left;
 
@@ -1503,7 +1561,7 @@ table.summary_table {
 
         background-color: #fff;
         background-repeat: no-repeat;
-        background-position: 10px 15px;
+        background-position: 8px;
         label {
           font-size: .9em;
           line-height: 1em;
@@ -1511,10 +1569,9 @@ table.summary_table {
           display: block;
 
           height: 31px;
-          padding-top: 21px;
-          padding-left: 30px;
+          padding-top: 14px;
 
-          text-align: left;
+          animation-timing-function: cubic-bezier(.1, .7, 1.0, 1.0);
           white-space: normal;
           text-transform: uppercase;
 
@@ -1533,12 +1590,17 @@ table.summary_table {
           background-image: url('../img/icon_customer.png');
           label {
             height: 40px;
-            padding-top: 12px;
+            padding-top: 4px;
           }
         }
         span {
+          position: absolute;
+          top: 37px;
+          left: 0;
+
           display: block;
 
+          width: 100%;
           padding: 15px 0;
 
           background: #f6f5f7;
@@ -1583,7 +1645,6 @@ table.summary_table {
     }
   }
   .review_content_wrapper {
-    border-top: 1px solid #db212c;
     .tab {
       font-size: 1em;
       line-height: 170%;
@@ -1613,56 +1674,11 @@ table.summary_table {
   }
 }
 
-.single_sidebar .bp-features-box {
-  margin: 0 15px;
-  padding: 18px 0;
 
-  border-bottom: 1px solid #ededed;
-  &.last {
-    border-bottom: none;
-  }
-  h3 {
-    min-height: 27px;
-    margin: 0;
-    padding: 2px 0 0 40px;
-
-    background-repeat: no-repeat;
-    background-position: top left;
-    &.icon1 {
-      background-image: url('../img/icon1.png');
-    }
-    &.icon2 {
-      background-image: url('../img/icon2.png');
-    }
-    &.icon3 {
-      background-image: url('../img/icon3.png');
-    }
-    &.icon4 {
-      background-image: url('../img/icon4.png');
-    }
-    &.icon5 {
-      background-image: url('../img/icon5.png');
-    }
-    &.icon6 {
-      background-image: url('../img/icon6.png');
-    }
-  }
-  ul {
-    margin: 15px 0 0 28px;
-    padding: 0;
-
-    list-style-image: url('../img/tick.png');
-    li {
-      font-size: .9em;
-
-      margin-bottom: 6px;
-    }
-  }
-}
 
 .vpn_wrapper {
   .vpn_head {
-    margin: 0 0 20px 20px;
+    margin: 0 0 20px;
     padding: 8px 8px 8px 55px;
 
     background: #fff url('../img/review_icon.png') top left no-repeat;
@@ -1680,33 +1696,45 @@ table.summary_table {
     }
   }
   .vpn_loop_wrapper {
-    margin: 0 -10px 0 10px;
-    padding-bottom: 70px;
+    margin: 0;
+    padding: 0 0 70px;
+
+    text-align: center;
     .vpn {
-      margin: 0;
+      display: inline-block;
+
+      width: 32%;
+      height: 220px;
+      margin: 0 .5% 10px;
       padding: 0;
       .vpn_pre {
-        margin: 0 10px 21px 10px;
+        position: relative;
+
+        display: block;
+        overflow: hidden;
+
+        width: 100%;
+        height: 100%;
         padding: 0;
 
         cursor: pointer;
+        text-align: center;
 
-        background: #fff;
-        .screenpic {
-          width: 100%;
-          height: auto;
-        }
+        background-color: #fff;
+        background-repeat: no-repeat;
+        background-position: center top;
+        background-size: cover;
         .vpn_content {
-          margin: 8px 8px 0 8px;
-          padding: 0 0 20px 0;
-          .logo {
-            float: left;
+          position: absolute;
+          bottom: 0;
 
-            width: 40%;
-            img {
-              width: 100%;
-            }
-          }
+          width: 100%;
+          height: 30%;
+          padding: 10px;
+
+          text-align: center;
+
+          background-color: #fff;
           .vpn_info {
             font-size: .9em;
 
@@ -1722,6 +1750,11 @@ table.summary_table {
 
               color: #414044;
             }
+          }
+        }
+        &:hover {
+          .vpn_content {
+            bottom: -150px;
           }
         }
       }
@@ -2127,6 +2160,9 @@ img {
       }
     }
   }
+  .single_sidebar_wrapper_servers {
+    background-color: #fff;
+  }
 }
 
 @media only screen and (min-width: 768px) {
@@ -2489,6 +2525,7 @@ a {
   .navigation {
     /*     position: absolute; */
     width: 100%;
+
     text-align: center;
     .page-numbers,
     .prev,
@@ -5553,17 +5590,19 @@ ul.ratings {
 
 .rating_value {
   font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
-  font-size: 8pt;
+  font-size: 15px;
 
   padding: 1px 3px;
 
   white-space: nowrap;
+  i {
+    opacity: .5;
+    color: orange;
+    color: orange;
+  }
   .no_ratings {
     color: #666;
   }
-}
-
-.rating_value {
   a {
     display: block;
     float: left;
@@ -5576,7 +5615,54 @@ ul.ratings {
   .on {
     background: url(../img/star.gif) no-repeat;
   }
+  &.rating_value-1 {
+    i {
+      &:nth-child(1) {
+        opacity: 1;
+      }
+    }
+  }
+  &.rating_value-2 {
+    i {
+      &:nth-child(1),
+      &:nth-child(2) {
+        opacity: 1;
+      }
+    }
+  }
+  &.rating_value-3 {
+    i {
+      &:nth-child(1),
+      &:nth-child(2),
+      &:nth-child(3) {
+        opacity: 1;
+      }
+    }
+  }
+  &.rating_value-4 {
+    i {
+      &:nth-child(1),
+      &:nth-child(2),
+      &:nth-child(3),
+      &:nth-child(4) {
+        opacity: 1;
+      }
+    }
+  }
+  &.rating_value-5 {
+    i {
+      &:nth-child(1),
+      &:nth-child(2),
+      &:nth-child(3),
+      &:nth-child(4),
+      &:nth-child(5) {
+        opacity: 1;
+      }
+    }
+  }
 }
-.rating_value {
-
+.mts-icon-star {
+  &:before {
+    color: orange;
+  }
 }
