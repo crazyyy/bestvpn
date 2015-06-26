@@ -1417,6 +1417,28 @@ table.summary_table {
       border-radius: 50%;
     }
   }
+  .compat {
+    text-align: center;
+    span {
+      display: inline-block;
+
+      width: 26px;
+      height: 26px;
+      margin: 0 5px;
+
+      background-repeat: no-repeat;
+      background-position: center;
+      &.Linux.Compatible {
+        background-image: url(../img/linux.png);
+      }
+      &.PC.Compatible {
+        background-image: url(../img/windows.png);
+      }
+      &.Mac.Compatible {
+        background-image: url(../img/macosx.png);
+      }
+    }
+  }
 }
 
 #bp-questionnaire {
